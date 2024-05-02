@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Módulo 1. Lorem ipsum</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="styles/css/index.css">
+    <link rel="stylesheet" href="styles/css/info-gral.css">
+
+    <!-- Recurso para al hacer scroll vayan a apareciendo las secciones -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Barra de progreso en la parte superior -->
+    <div id="progress"></div>
+
+    <header class="banner-1">
+
+        <div class="js-pleca pleca">
+
+            <a class="pleca__uv" href="https://uv.mx/" target="__blank">Universidad Veracruzana</a>
+
+            <div class="pleca__ee container" style="display: none;">
+                <span class="text-left aparecer-desaparecer">
+                    <p class="tam-font font-weight-bold text-dark mb-0" style="margin-top: 10px;">
+                        <span class="text-azul">Módulo 1.</span> Lorem ipsum
+                    </p> <br>
+                </span>
+            </div>
+
+        </div>
+
+    </header>
+
+    <button type="button" class="btn btn-info js-sidebar__collapse sidebar__collapse" style="display: block !important;"
+        aria-pressed="false" aria-expanded="false" aria-label="Menú">
+        <span>MEN&Uacute;</span>&nbsp;&nbsp;<i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Menú -->
+    <navbar id="menu-item" class="sidebar" style="overflow-y: scroll;" role="navigation" aria-label="Menú" name="Menú">
+
+        <div class="sidebar__encabezado">
+            <button class="btn btn-link sidebar__dismiss" aria-label="Cerrar menú desplegado">
+                <i class="fas fa-arrow-left sidebar__icono"></i>
+            </button>
+        </div>
+
+        <menu-component></menu-component>
+
+        <!-- <div class="sidebar__encabezado">
+            <button class="btn btn-link sidebar__dismiss" aria-label="Cerrar menú desplegado">
+                <i class="fas fa-arrow-left sidebar__icono"></i>
+            </button>
+        </div> -->
+
+    </navbar>
+
+    <!-- Código principal -->
+    <main>
+
+        <div class="margen-superior-modulo">
+
+            <div class="container">
+
+                <div class="text-center">
+
+                    <img src="./images/home/banner-modulo.png" class="" alt="Banner de inicio" width="50%" height="auto"
+                        aria-hidden="true">
+
+                    <h1 class="parrafo mt-3">
+                        <span class="titulo--actividad-texto"><strong>Lorem ipsum</strong></span> <br>
+                        <span>dolor sit amet, lorem ipsum</span>
+                    </h1>
+
+                    <hr class="linea-modulo">
+
+                </div>
+
+                <!-- Presentación -->
+                <div class="tema">
+
+                    <h2 class="titulo--actividad-texto mt-5 mb-4">
+                        <img src="./images/home/icono-subtitulo.png" width="20px" height="auto" alt="icono">
+                        Subtema 1.1
+                    </h2>
+
+                    <p class="parrafo">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nesciunt eveniet id porro
+                        nemo veritatis suscipit magnam iure ad! Rerum quas neque tempora mollitia iure ratione aut minus
+                        at eos?
+                        Consequatur perspiciatis voluptates suscipit, consectetur debitis quasi cum beatae aperiam,
+                        ullam optio non veritatis consequuntur, officia dolorum officiis voluptate fugit repellat iste
+                        exercitationem recusandae. Amet maiores sed pariatur accusantium sapiente.
+                    </p>
+
+                    <div class="escritorio mt-4_5 mb-4_5">
+
+                        <p class="parrafo instruccion-color--verde mt-5 mb-5">
+                            <b><span aria-hidden="true">&#9678;</span> Instrucción:</b> Haz clic en la tarjeta y
+                            deslízala a la izquierda para leer la información.
+                        </p>
+
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+
+                                <div id="swip1" class="swiper-slide">
+
+                                    <div class="mx-4 py-3">
+
+                                        <div class="d-flex justify-content-center align-items-center" style="gap: 1em;">
+
+
+                                            <img src="./images/home/prueba.png" width="50px" height="auto" alt="">
+
+                                            <p class="parrafo">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+                                                maxime laboriosam ipsa veritatis nulla. At consectetur nesciunt,
+                                                dignissimos ducimus distinctio dicta delectus perspiciatis tempora
+                                                nobis, itaque ipsum voluptas, architecto perferendis.
+                                                Nemo quisquam sapiente commodi, aspernatur tempora fugiat repellat
+                                                corrupti aperiam consequatur maxime beatae unde ducimus minima quis
+                                                aliquid. Vel soluta labore sed rerum, sit ea natus corporis temporibus
+                                                odio quo.
+                                            </p>
+
+                                        </div>
+
+                                        <div class="p-relative">
+                                            <p class="parrafo text-grey" aria-hidden="true">1 / 3</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div id="swip2" class="swiper-slide">
+
+                                    <div class="mx-4 py-3">
+
+                                        <p class="parrafo">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates maxime
+                                            laboriosam ipsa veritatis nulla. At consectetur nesciunt, dignissimos
+                                            ducimus distinctio dicta delectus perspiciatis tempora nobis, itaque ipsum
+                                            voluptas, architecto perferendis.
+                                            Nemo quisquam sapiente commodi, aspernatur tempora fugiat repellat corrupti
+                                            aperiam consequatur maxime beatae unde ducimus minima quis aliquid. Vel
+                                            soluta labore sed rerum, sit ea natus corporis temporibus odio quo.
+                                        </p>
+
+
+                                        <div class="p-relative">
+                                            <p class="parrafo text-grey" aria-hidden="true">2 /3</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div id="swip3" class="swiper-slide">
+
+                                    <div class="mx-4 py-3">
+
+                                        <p class="parrafo">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates maxime
+                                            laboriosam ipsa veritatis nulla. At consectetur nesciunt, dignissimos
+                                            ducimus distinctio dicta delectus perspiciatis tempora nobis, itaque ipsum
+                                            voluptas, architecto perferendis.
+                                            Nemo quisquam sapiente commodi, aspernatur tempora fugiat repellat corrupti
+                                            aperiam consequatur maxime beatae unde ducimus minima quis aliquid. Vel
+                                            soluta labore sed rerum, sit ea natus corporis temporibus odio quo.
+                                        </p>
+
+
+                                        <div class="p-relative">
+                                            <p class="parrafo text-grey" aria-hidden="true">3 / 3</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="movil mt-4 mb-4">
+
+                        <div class="tarjetas-bg-responsive py-3 px-3">
+
+                            <p class="parrafo">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates maxime laboriosam
+                                ipsa veritatis nulla. At consectetur nesciunt, dignissimos ducimus distinctio dicta
+                                delectus perspiciatis tempora nobis, itaque ipsum voluptas, architecto perferendis.
+                                Nemo quisquam sapiente commodi, aspernatur tempora fugiat repellat corrupti aperiam
+                                consequatur maxime beatae unde ducimus minima quis aliquid. Vel soluta labore sed rerum,
+                                sit ea natus corporis temporibus odio quo.
+                            </p>
+
+                        </div>
+
+                        <div class="tarjetas-bg-responsive py-3 px-3">
+
+                            <p class="parrafo">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates maxime laboriosam
+                                ipsa veritatis nulla. At consectetur nesciunt, dignissimos ducimus distinctio dicta
+                                delectus perspiciatis tempora nobis, itaque ipsum voluptas, architecto perferendis.
+                                Nemo quisquam sapiente commodi, aspernatur tempora fugiat repellat corrupti aperiam
+                                consequatur maxime beatae unde ducimus minima quis aliquid. Vel soluta labore sed rerum,
+                                sit ea natus corporis temporibus odio quo.
+                            </p>
+
+                        </div>
+
+                        <div class="tarjetas-bg-responsive py-3 px-3">
+                            <p class="parrafo">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates maxime laboriosam
+                                ipsa veritatis nulla. At consectetur nesciunt, dignissimos ducimus distinctio dicta
+                                delectus perspiciatis tempora nobis, itaque ipsum voluptas, architecto perferendis.
+                                Nemo quisquam sapiente commodi, aspernatur tempora fugiat repellat corrupti aperiam
+                                consequatur maxime beatae unde ducimus minima quis aliquid. Vel soluta labore sed rerum,
+                                sit ea natus corporis temporibus odio quo.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <p class="parrafo">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi omnis reprehenderit corporis
+                        asperiores in, sunt, illum eum nesciunt consequatur eligendi accusantium doloribus. Magnam sint
+                        autem reprehenderit, ullam quaerat veniam laudantium?
+                        Corrupti laudantium illo eaque hic autem? Voluptate magni accusamus odit ea optio. Dicta veniam
+                        hic magnam inventore sed facilis dolore et voluptas voluptatem delectus a asperiores neque
+                        accusamus, id temporibus.
+                        Esse rem necessitatibus in blanditiis eligendi, suscipit quia. Voluptatem fugit vero corporis
+                        perspiciatis in modi, eligendi atque nesciunt rerum ab unde? Nulla iste molestiae atque nam
+                        ullam magnam accusamus. Magni.
+                    </p>
+
+                    <div class="radial-ellipse-size no-imp mt-4 mb-4 mt-md-5 mb-md-5" aria-hidden="true"></div>
+
+                    <p class="parrafo text-morado">
+                        <img src="./images//home/manzana.png" alt="" class="img-actividad">
+                        <strong>Actividad 01</strong>
+                    </p>
+
+                    <p class="parrafo">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum dignissimos
+                        laudantium ex rem, provident sequi earum aspernatur minima est dolorum asperiores repudiandae
+                        velit voluptates suscipit, optio deserunt unde quod.
+                    </p>
+
+                    <p class="parrafo instruccion-color--verde">
+                        <strong>
+                            Instrucción
+                        </strong>
+                    </p>
+
+                    <ol class="parrafo ml-4">
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fuga numquam id qui
+                            laboriosam obcaecati totam tempora. Deleniti amet quos exercitationem, quisquam sunt
+                            doloribus id expedita architecto praesentium, veritatis deserunt.
+                        </li>
+
+                        <div class="text-center mt-3 mb-3">
+                            <a href="descargables/info-gral/EITI-Fuentes-de-informacion.pdf" download=""
+                                class="btn btn-descarga border rounded waves-effect waves-light">
+                                <span class="boton--con-imagen__texto"><strong>State of the art of
+                                        communicate</strong></span>
+                                <span class="parrafo sr-only">PDF</span>
+                            </a>
+                        </div>
+
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fuga numquam id qui
+                            laboriosam obcaecati totam tempora. Deleniti amet quos exercitationem, quisquam sunt
+                            doloribus id expedita architecto praesentium, veritatis deserunt.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fuga numquam id qui
+                            laboriosam obcaecati totam tempora. Deleniti amet quos exercitationem, quisquam sunt
+                            doloribus id expedita architecto praesentium, veritatis deserunt.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fuga numquam id qui
+                            laboriosam obcaecati totam tempora. Deleniti amet quos exercitationem, quisquam sunt
+                            doloribus id expedita architecto praesentium, veritatis deserunt.</li>
+                    </ol>
+
+                    <div class="text-right mt-3 mb-3">
+                        <a href="descargables/info-gral/EITI-Fuentes-de-informacion.pdf" download=""
+                            class="btn btn-descarga border rounded waves-effect waves-light">
+                            <span class="boton--con-imagen__texto"><strong>Rúbrica</strong></span>
+                            <span class="parrafo sr-only">PDF</span>
+                        </a>
+                    </div>
+
+                    <div class="radial-ellipse-size no-imp mt-4 mb-4 mt-md-5 mb-md-5" aria-hidden="true"></div>
+
+                    <h2 class="titulo--actividad-texto mt-5 mb-4">
+                        <img src="./images/home/icono-subtitulo.png" width="20px" height="auto" alt="icono">
+                        Subtema 1.2
+                    </h2>
+
+                    <div class="text-center mt-4_5 mb-4_5">
+
+                        <img src="./images/home/prueba-2.png" width="100%" height="auto" alt="">
+
+                    </div>
+
+                    <p class="parrafo">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam enim, quidem ex
+                        assumenda mollitia fugit praesentium consectetur unde possimus ad molestiae. Recusandae ipsam
+                        harum praesentium eligendi repellat vitae eius!
+                        Odio et ipsam eum fuga natus veritatis, laudantium consectetur ducimus blanditiis id vel,
+                        repellat quod enim ut quia fugit dolor culpa. Accusantium deserunt temporibus ipsam, vero
+                        impedit mollitia facilis ex.
+                        Accusamus velit possimus autem id quisquam quis ratione. Non ipsa doloribus ut minus itaque
+                        laborum nostrum corrupti maxime perspiciatis ab, harum aspernatur, dignissimos iusto id nemo,
+                        numquam labore distinctio alias?
+                    </p>
+
+                    <div class="escritorio">
+
+                        <p class="parrafo instruccion-color--verde mb-5">
+                            <b>Instrucción:</b> Haz clic en cada pestaña para leer la información.​
+                        </p>
+
+                        <ul class="nav nav-tabs tabs-1-nav justify-content-center">
+
+                            <li class="nav-item tab-1-item waves-effect waves-light tam-tab">
+                                <a id="firsttab" data-toggle="tab" href="#ppaso-1" class="nav-link tab-1-link active text-center">
+                                    <span class="tabs-1-texto parrafo">Comunicación e interacción​</span>
+                                </a>
+                            </li>
+
+                            <li id="btnactive" class="nav-item tab-1-item waves-effect waves-light tam-tab">
+                                <a id="secondtab" data-toggle="tab" href="#ppaso-2" class="nav-link tab-1-link text-center">
+                                    <span class="tabs-1-texto parrafo">Nomenclatura para los archivos​</span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <div class="tab-content bg-tab-content">
+
+                            <div id="ppaso-1" class="tab-pane tab-1-tab container py-3 px-4 active">
+
+                                <p class="parrafo sr-only">
+                                    Estás en la pestaña de Comunicación e interacción, continúa bajando para leer la
+                                    información.
+                                </p>
+
+                                <p class="parrafo">
+                                    Dentro de esta Experiencia Educativa en línea estaremos usando la plataforma
+                                    <b>Eminus 4</b>, el correo institucional electrónico como vías de comunicación,
+                                    grupos telefónicos de WhatsApp, sitios en los cuales puedes plantear dudas o
+                                    sugerencias, en caso de tenerlas.​
+                                </p>
+
+                                <p class="parrafo">
+                                    La Experiencia Educativa en línea se integra de actividades de aprendizaje. En cada
+                                    actividad, encontrarás detalladamente el cómo y qué hacer para ir elaborando cada
+                                    una de las evidencias de aprendizaje y, por consecuencia, lograr el porcentaje
+                                    correspondiente de cada actividad que conformará tu calificación final del curso.
+                                </p>
+
+                                <p class="parrafo">
+                                    Cada una de las actividades solicitadas a lo largo del curso, deberán ser entregadas
+                                    en tiempo y bajo los lineamientos y criterios establecidos.​
+                                </p>
+
+                                <p class="parrafo sr-only">
+                                    Terminaste el contenido de la pestaña Comunicación e interacción, deberás subir y
+                                    elegir la pestaña siguiente.
+                                </p>
+
+                            </div>
+
+                            <div id="ppaso-2" class="tab-pane tab-1-tab container py-3 px-4">
+
+                                <p class="parrafo sr-only">
+                                    Estás en la pestaña de Nomenclatura para los archivos, continúa bajando para leer la
+                                    información.
+                                </p>
+
+                                <p class="parrafo">
+                                    Para llevar un sistema organizado de tus actividades, se ha diseñado una
+                                    nomenclatura que deberás incluir como nombre de archivo en cada tarea que debas
+                                    enviar, misma que servirá de guía para reconocer tus trabajos. Esta clave está
+                                    formada por varios elementos, entre ellos el número de la actividad, así como tu
+                                    apellido y nombre, por ejemplo:
+                                </p>
+
+                                <p class="parrafo">
+                                    <b>
+                                        ACT##_Primer<wbr>Nombrey<wbr>Apellido<wbr>.ext​ <br>
+                                        Ejemplo:​ <br>
+                                        ACT01_LuisTorres.docx
+                                    </b>
+                                </p>
+
+                                <p class="parrafo">
+                                    Donde ACT corresponde a la abreviatura de la actividad de aprendizaje y ## al número
+                                    de actividad del curso.
+                                    Suponiendo que el nombre del estudiante sea Juan Luis Torres Martínez el archivo
+                                    deberá nombrarse de la siguiente forma: Luis (PrimerNombre) Torres (PrimerApellido)
+                                    y la extensión del documento .docx si corresponde a un archivo en Word, .jpg si
+                                    corresponde a una imagen, entre otros.
+                                </p>
+
+                                <p class="parrafo">
+                                    El respetar la nomenclatura te ayudará a mantener el orden
+                                    y clasificación de tus actividades, además de agilizar la revisión que realiza tu
+                                    facilitador.
+                                </p>
+
+                                <p class="parrafo sr-only">
+                                    Terminaste el contenido de la pestaña Nomenclatura para los archivos.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="movil">
+
+                        <div class="titulo-bg">
+                            <div class="container py-2">
+                                <p class="parrafo mb-0 font-weight-bold">
+                                    Comunicación e interacción
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-contenido">
+                            <div class="container py-3">
+
+                                <p class="parrafo">
+                                    Dentro de esta Experiencia Educativa en línea estaremos usando la plataforma
+                                    <b>Eminus 4</b>, el correo institucional electrónico como vías de comunicación,
+                                    grupos telefónicos de WhatsApp, sitios en los cuales puedes plantear dudas o
+                                    sugerencias, en caso de tenerlas.​
+                                </p>
+
+                                <p class="parrafo">
+                                    La Experiencia Educativa en línea se integra de actividades de aprendizaje. En cada
+                                    actividad, encontrarás detalladamente el cómo y qué hacer para ir elaborando cada
+                                    una de las evidencias de aprendizaje y, por consecuencia, lograr el porcentaje
+                                    correspondiente de cada actividad que conformará tu calificación final del curso.
+                                </p>
+
+                                <p class="parrafo">
+                                    Cada una de las actividades solicitadas a lo largo del curso, deberán ser entregadas
+                                    en tiempo y bajo los lineamientos y criterios establecidos.​
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="titulo-bg mt-4">
+                            <div class="container py-2">
+                                <p class="parrafo mb-0 font-weight-bold">
+                                    Nomenclatura para los archivos
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-contenido">
+                            <div class="container py-3">
+
+                                <p class="parrafo">
+                                    Para llevar un sistema organizado de tus actividades, se ha diseñado una
+                                    nomenclatura que deberás incluir como nombre de archivo en cada tarea que debas
+                                    enviar, misma que servirá de guía para reconocer tus trabajos. Esta clave está
+                                    formada por varios elementos, entre ellos el número de la actividad, así como tu
+                                    apellido y nombre, por ejemplo:
+                                </p>
+
+                                <p class="parrafo">
+                                    <b>
+                                        ACT##_Primer<wbr>Nombrey<wbr>Apellido<wbr>.ext​ <br>
+                                        Ejemplo:​ <br>
+                                        ACT01_LuisTorres.docx
+                                    </b>
+                                </p>
+
+                                <p class="parrafo">
+                                    Donde ACT corresponde a la abreviatura de la actividad de aprendizaje y ## al número
+                                    de actividad del curso. Suponiendo que el nombre del estudiante sea Juan Luis Torres
+                                    Martínez el archivo deberá nombrarse de la siguiente forma: Luis (PrimerNombre)
+                                    Torres (PrimerApellido) y la extensión del documento .docx si corresponde a un
+                                    archivo en Word, .jpg si corresponde a una imagen, entre otros.
+                                </p>
+
+                                <p class="parrafo">
+                                    El respetar la nomenclatura te ayudará a mantener el orden y clasificación de tus
+                                    actividades, además de agilizar la revisión que realiza tu facilitador.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="radial-ellipse-size no-imp mt-4 mb-4 mt-md-5 mb-md-5" aria-hidden="true"></div>
+
+                    <div class="bg-foro-1">
+
+                        <p class="parrafo text-morado">
+                            <img src="./images/home/foro.png" alt="" class="img-actividad-2"> &nbsp;&nbsp;
+                            <strong>Foro 01.</strong> Lorem ipsum dolor
+                        </p>
+
+                        <p class="parrafo mb-0">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae ut exercitationem
+                            quia laudantium consequuntur fugit vitae voluptatum, provident ducimus mollitia fugiat
+                            impedit. Deleniti ex culpa rerum reiciendis quam aliquid!
+                            Impedit ab dolor, rerum praesentium iure, beatae officia id quod porro quos distinctio sunt
+                            consequatur quisquam nemo eligendi esse omnis, quasi eaque culpa exercitationem unde sit?
+                            Placeat, voluptatibus laboriosam. Quidem!
+                            Nostrum voluptatem ipsum earum laborum iusto, at qui. Vero consequatur dolore iste
+                            distinctio pariatur laboriosam id adipisci voluptatum, est odio itaque enim doloribus beatae
+                            quos animi quisquam quis reiciendis assumenda.
+                        </p>
+
+                    </div>
+
+                </div>
+                <!--  -->
+
+            </div>
+
+        </div>
+
+        <br><br><br>
+
+    </main>
+
+    <footer class="pie-pagina">
+
+        <img src="images//home/banner-footer.png" alt="Logo de la Universidad Veracruzana" width="100%" height="auto">
+
+    </footer>
+
+
+    <div class="overlay"></div>
+
+    <div class="modal animate__animated animate__zoomInUp" id="modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <hr class="linea-modales">
+
+                    <div class="mx-3">
+
+                        <div class="text-center mt-4 mb-4">
+
+                            <img src="./images/home/DIPD_expertocontenido.png" width="12%" height="auto"
+                                alt="Imagen de experto en contenido">
+
+                            <p class="parrafo">
+                                Esquema 1
+                            </p>
+
+                        </div>
+
+                        <p class="parrafo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet qui delectus, facere id iste
+                            quod enim, totam quae asperiores eos, consequatur perferendis fuga necessitatibus vero
+                            maiores neque dicta ex facilis.
+                            Distinctio asperiores, rerum aspernatur nesciunt adipisci, possimus ratione illo quia
+                            commodi sit voluptates cumque mollitia non cupiditate quasi voluptatum maiores quibusdam
+                            dicta exercitationem excepturi minima placeat maxime. Quod, ipsam assumenda?
+                            Totam eaque velit incidunt sequi corporis. Unde, doloremque. Nisi tempora cupiditate nemo?
+                            Provident, quod. Ullam, consectetur magnam delectus alias perspiciatis sequi eos maiores,
+                            laboriosam praesentium vitae doloribus voluptates libero sapiente!
+                            Facilis error maiores obcaecati corrupti! Eius minima fugit ipsum blanditiis dignissimos at
+                            tempore atque sit neque tempora, magnam, dicta distinctio possimus inventore dolorem
+                            tenetur, omnis sint quos. Iure, error commodi.
+                            Quam illo dicta quas eos voluptatum commodi molestiae veniam, dolores id dolorum culpa iure
+                            totam! A ipsum eveniet consequatur aliquid inventore aut molestiae nemo impedit porro
+                            exercitationem, minima doloremque voluptate.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cerrar-modal" style="border-radius: 7px;"
+                        data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal animate__animated animate__zoomInUp" id="modal-2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <hr class="linea-modales">
+
+                    <div class="mx-3">
+
+                        <div class="text-center mt-4 mb-4">
+
+                            <img src="./images/home/DIPD_expertocontenido.png" width="12%" height="auto"
+                                alt="Imagen de experto en contenido">
+
+                            <p class="parrafo">
+                                Esquema 2
+                            </p>
+
+                        </div>
+
+                        <p class="parrafo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet qui delectus, facere id iste
+                            quod enim, totam quae asperiores eos, consequatur perferendis fuga necessitatibus vero
+                            maiores neque dicta ex facilis.
+                            Distinctio asperiores, rerum aspernatur nesciunt adipisci, possimus ratione illo quia
+                            commodi sit voluptates cumque mollitia non cupiditate quasi voluptatum maiores quibusdam
+                            dicta exercitationem excepturi minima placeat maxime. Quod, ipsam assumenda?
+                            Totam eaque velit incidunt sequi corporis. Unde, doloremque. Nisi tempora cupiditate nemo?
+                            Provident, quod. Ullam, consectetur magnam delectus alias perspiciatis sequi eos maiores,
+                            laboriosam praesentium vitae doloribus voluptates libero sapiente!
+                            Facilis error maiores obcaecati corrupti! Eius minima fugit ipsum blanditiis dignissimos at
+                            tempore atque sit neque tempora, magnam, dicta distinctio possimus inventore dolorem
+                            tenetur, omnis sint quos. Iure, error commodi.
+                            Quam illo dicta quas eos voluptatum commodi molestiae veniam, dolores id dolorum culpa iure
+                            totam! A ipsum eveniet consequatur aliquid inventore aut molestiae nemo impedit porro
+                            exercitationem, minima doloremque voluptate.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cerrar-modal" style="border-radius: 7px;"
+                        data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+
+    <script src="scripts/js/home.js"></script>
+    <script src="scripts/js/annyang-2.js"></script> <!-- Comandos por voz -->
+    <script src="scripts/js/info-gral.js"></script>
+    <script type="text/javascript" src="scripts/js/menu.js"></script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true
+        });
+    </script>
+
+
+    <!-- Funcionalidad para Progress-bar-scroll del inicio -->
+    <script src="./scripts/js/scroll-timeline.js"></script>
+
+    <script>
+
+        // Create ScrollTimeline
+        const myScrollTimeline = new ScrollTimeline({
+            source: document.scrollingElement,
+            scrollSource: document.scrollingElement, // For legacy implementations
+            orientation: 'block',
+            scrollOffsets: [
+                new CSSUnitValue(0, 'percent'),
+                new CSSUnitValue(100, 'percent'),
+            ],
+        });
+
+        // Animate Progress Bar on Scroll
+        new Animation(
+            new KeyframeEffect(
+                document.querySelector('#progress'),
+                {
+                    transform: ['scaleX(0)', 'scaleX(1)'],
+                },
+                { duration: 1, fill: "forwards" }
+            ),
+            myScrollTimeline
+        ).play();
+
+    </script>
+    <!--  -->
+
+
+</body>
+
+</html>

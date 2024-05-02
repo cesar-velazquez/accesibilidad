@@ -1,0 +1,1894 @@
+
+@media screen and (max-width: 782px) {
+    .sidebar__collapse {
+        top: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .sidebar__collapse {
+        top: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .sidebar__collapse {
+        top: 7rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .escritorio-2{display: block;}
+    .movil-2{display: none;}
+}
+
+@media screen and (max-width: 991px) {
+    .escritorio-2{display: none;}
+    .movil-2{display: block;}
+}
+
+.titulo-inicio-modulo{
+    color: #2C478B;
+    font-weight: 500;
+}
+
+.titulo-inicio-modulo h3{
+    font-weight: 600;
+}
+
+.inicio-card{
+    margin-top: 4rem !important;
+}
+
+.text-objetivo{
+    color: #482A7F;
+}
+
+.width-btn{
+    width: 213px;
+}
+
+.bg-amarillo-responsive{
+    background-color: #FBF7CB;
+}
+
+@media screen and (max-width: 991px) {
+    .width-btn{
+        font-size: 1rem !important;
+        width: 180px;
+    }
+}
+
+/* Conceptos fundamentales 1.1 */
+.img-legis{
+    width: 70%;
+    height: auto;
+}
+
+.flecha-derecha-azul{
+    width: 40px;
+    height: auto;
+}
+
+@media screen and (max-width: 991px) {
+    .flecha-derecha-azul{width: 25px;}
+}
+
+.btn-colapsar-layout {
+    display: grid;
+    /* grid-template-columns: minmax(1rem, 3rem) minmax(12.5rem, 1fr) 2rem; */
+    grid-template-columns: 0rem 1fr 3rem;
+    grid-template-rows: 1fr;
+    gap: 0px 1em;
+    grid-template-areas: ". . .";
+    justify-content: center;
+    align-content: center;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+
+/* Estilos - Formas de la discriminación */
+.tam-tab{
+    width: 20%;
+}
+
+@media screen and (min-width: 992px) {
+
+    .tam-tab{
+        width: 20% !important;
+    }
+    .tam-tab-2{
+        width: 20%;
+    }
+}
+
+.ajuste-altura{
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ajuste-altura span{align-self: flex-end;}
+
+.bg-tab-content{
+    background-color: #FBF7CB;
+}
+
+li.nav-item.tab-1-item.waves-effect.waves-light a.active {
+    color: #07499E !important;
+    background: #fff !important;
+    border: 2px solid #07499E !important;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+
+li.nav-item.tab-1-item.waves-effect.waves-light a {
+    color: #fff !important;
+    background: #07499E !important;
+    border: 1px solid #fff !important;
+}
+
+@media screen and (max-width: 991px) {
+
+    .tam-tab{
+        width: 33.33%;
+    }
+
+    .tam-tab-2{
+        width: 50%;
+    }
+}
+
+.bg-verde-formas{
+    background-color: #F3F9F8;
+}
+
+.bg-verde-formas-2{
+    background-color: #fff;
+}
+
+/*  */
+
+
+/* Estilos conceptos asociados a la discriminación */
+
+.conceptos-asociados .btn-colapsar-layout {
+    display: grid;
+    /* grid-template-columns: minmax(1rem, 3rem) minmax(12.5rem, 1fr) 2rem; */
+    grid-template-columns: 3rem 1fr 3rem;
+    grid-template-rows: 1fr;
+    gap: 0px 2em;
+    grid-template-areas: ". . .";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+
+    .conceptos-asociados .btn-colapsar-layout {
+        display: grid;
+        /* grid-template-columns: minmax(1rem, 3rem) minmax(12.5rem, 1fr) 2rem; */
+        grid-template-columns: 0rem 1fr 3rem;
+        grid-template-rows: 1fr;
+        gap: 0px 1em;
+        grid-template-areas: ". . .";
+        justify-content: center;
+        align-content: center;
+        justify-items: flex-start;
+        align-items: center;
+    }
+}
+
+.conceptos-asociados .bg-amarillo-responsive {
+    background-color: #F2F3F3;
+}
+
+.list-style-a{
+    list-style-type: "\0061\0029";
+    padding-left: 7px;
+}
+.list-style-b{
+    list-style-type: "\0062\0029";
+    padding-left: 7px;
+}
+
+
+/*  */
+
+
+
+/* Estilos Derechos de las personas con discapacidad */
+
+.derechos-personas-titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.bg-derecho-personas{
+    background-color: #FFD267;
+}
+
+.margen-superior-cards{
+    margin-top: -15px;
+}
+
+.bg-card-footer{
+    background-color: #78B9DD;
+}
+
+.card-footer{
+    padding: 0.15rem 0.25rem;
+}
+
+.card-altura{
+    height: 250px;
+}
+
+@media screen and (max-width: 1199px) {
+
+    .card-altura{
+        height: 265px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .card-altura{
+        height: 360px;
+    }
+}
+
+.derechos-personas .btn-info-exp {
+    background-color: #0648A2;
+    color: #fff;
+    border-radius: 30px;
+    padding-bottom: 0.1rem;
+    padding-top: .1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.derechos-personas .btn-info-exp:hover{
+    background-color: #fff;
+    border: 2px solid #0648A2;
+    color: #0648A2;
+}
+
+.bg-card-responsivo{
+    background-color: #F3F9F8;
+}
+
+.bg-card-header-responsivo{
+    background-color: #FFD267;
+}
+
+.ajuste-ancho-card{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.derechos-personas .btn-azul {
+    width: 470px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .derechos-personas .btn-azul{
+        width: 370px;
+    }
+    
+}
+
+@media screen and (max-width: 420px) {
+
+    .derechos-personas .btn-azul{
+        width: 280px;
+    }
+
+}
+
+.derechos-personas .card-header{
+    background-color: #FBF7CB;
+    border-left: 10px solid #78B9DD;
+}
+
+.linea-vertical-azul{
+    border: 2px solid #78B9DD;
+    height: auto;
+}
+
+
+/*  */
+
+@media screen and (max-width: 767px) {
+    .ancho-responsivo{width: 25% !important;}
+}
+
+
+/* Actividad 1. Conceptos fundamentales */
+
+.bg-azul-claro{
+    background-color: #E6F3FC;
+}
+
+.ancho-imagen-1{    
+    width: 100%;
+}
+
+.ancho-imagen-2{    
+    width: 70%;
+}
+
+.ancho-boton-actividad{
+    max-width: 190px;
+    height: 70px;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1.5rem;
+}
+
+
+@media screen and (max-width: 991px) {
+    .ancho-boton-actividad{
+        max-width: 150px;
+        padding: 1rem;    }
+}
+
+@media screen and (max-width: 767px) {
+    .ancho-boton-actividad{
+        max-width: 130px;
+        height: 50px;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .img-flecha-izquierda{
+        width: 3vw;
+    }
+}
+
+.bg-card-lineamientos{
+    background-color: #E8F3E5;
+}
+
+.bg-card-lineamientos .text-azul{
+    color: #AB2992 !important;
+}
+
+.table-bordered {
+    border: 1px solid #10458F;
+}
+
+.borde-table{
+    border: 2px solid #10458F !important;
+}
+
+.bg-table-uno{
+    background-color: #FFD267;
+    font-weight: bold;
+    color: #10458F;
+    width: 70%;
+}
+
+.bg-table-dos{
+    background-color: #FBF7CB;
+    font-weight: bold;
+    color: #10458F;
+    width: 15%;
+}
+
+.bg-table-tres{
+    background-color: #E6F3FC;
+    text-align: center;
+}
+
+.vertical-middle{
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 991px) {
+    .img-table-adaptable{
+        width: 60%
+    }
+    .img-table-adaptable-2{
+        width: 53%
+    }
+}
+
+@media screen and (max-width: 767px), screen and (max-width: 570px) {
+    .img-table-adaptable-movil-1{ width: 26%;}
+    .img-table-adaptable-movil-2{ width: 25%;}
+}
+
+@media screen and (max-width: 569px){
+    .img-table-adaptable-movil-1{ width: 29%;}
+    .img-table-adaptable-movil-2{ width: 25%;}
+}
+
+/* Videos estilos */
+.vid3 {
+    width: 800px;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 767px){
+    .vid3 {
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .vid3 {
+        width: 100%;
+        margin-bottom: 2rem;
+        margin: 0 auto;
+    }
+}
+
+/*  */
+
+/*  */
+
+
+/* Tema 1.2 El derecho al trabajo  */
+.ley-federal .btn-colapsar-layout {
+    display: grid;
+    /* grid-template-columns: minmax(1rem, 3rem) minmax(12.5rem, 1fr) 2rem; */
+    grid-template-columns: 3rem 1fr 3rem;
+    grid-template-rows: 1fr;
+    gap: 0px 2em;
+    grid-template-areas: ". . .";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.ley-federal .bg-amarillo-responsive {
+    background-color: #FBFBFB;
+}
+
+/* Actividad 1.2  */
+
+@media screen and (max-width: 1199px){
+    .ajuste-img-responsivo{
+        width: 100%;
+    }
+    
+    .ajuste-img-responsivo-2{
+        width: 70%;
+    }
+
+    .ajuste-lista-responsivo{
+        margin-left: 2.3rem !important;
+    }
+
+    .ajuste-lista-responsivo-2{
+        margin-left: 1.3rem !important;
+    }
+
+    .ajuste-lista-responsivo-1{
+        margin-left: -1.3rem !important;
+    }
+}
+
+.ajuste-lista-responsivo-1{
+    margin-left: -1.3rem !important;
+}
+
+@media screen and (max-width: 991px){
+    .img-ajuste-resp-1 {
+        width: 100%;
+    }
+
+    .ajuste-lista-responsivo-1{
+        margin-left: 1.2rem !important;
+    }
+
+    .flex-start{
+        align-self: flex-start;
+    }
+}
+
+.bg-grey{
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+
+
+/*  */
+
+/*  */
+
+
+.enlace-actividad{
+    color: #105bc4;
+    cursor: pointer;
+}
+
+.enlace-actividad:hover{
+    text-decoration: underline;
+}
+
+.texto-capitulo{
+    color: #D76665;
+    font-weight: bold;
+}
+
+
+
+
+/* Estilos modal */
+@media (min-width: 992px){
+    .modal-lg, .modal-xl {
+        max-width: 1020px;
+    }
+}
+
+
+/*  */
+
+
+
+
+
+
+/* Estilos extras accesibilidad */
+
+
+@media screen and (max-width: 700px){
+    .margen-superior{
+        margin-top: 5.5rem !important;
+    }
+}
+
+
+.titulo-bg{
+    background-color: #FFD267;
+    border-top: 3px solid #10458F;
+    width: 35%;
+}
+
+.bg-contenido{
+    background-color: #F3F9F8;
+}
+
+@media screen and (max-width: 1199px){
+    .titulo-bg{
+        width: 40%;
+    }
+}
+
+.margen-izquierdo-menor{
+    margin-left: -50px;
+}
+
+@media screen and (max-width: 991px){
+    .titulo-bg{
+        width: 50%;
+    }
+
+    .margen-izquierdo-menor{
+        margin-left: 10px;
+    }
+}
+
+
+.video1-1 .btn-colapsar{
+    width: 800px;
+}
+
+.video1-1 .btn-colapsar .btn-colapsar-layout {
+    display: grid;
+    /* grid-template-columns: minmax(1rem, 3rem) minmax(12.5rem, 1fr) 2rem; */
+    grid-template-columns: 3rem 1fr 3rem;
+    grid-template-rows: 1fr;
+    gap: 0px 1em;
+    grid-template-areas: ". . .";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.video1-1 .colapsar-contenido {
+    background: #F2F3F3;
+    font-size: 1rem;
+    overflow: auto;
+    padding: 1rem 2rem;
+    width: 800px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 991px){
+    .video1-1 .btn-colapsar{
+        width: 100%;
+    }
+
+    .video1-1 .colapsar-contenido {
+        width: 100%;
+    }
+}
+
+.img-marcoconsti{
+    width: 17%;
+    height: auto;
+}
+
+@media screen and (max-width: 1199px){
+    .img-marcoconsti{
+        width: 23%;
+        height: auto;
+        align-self: flex-start;
+    }
+}   
+
+
+@media screen and (max-width: 991px){
+    .img-marcoconsti{
+        width: 30%;
+        height: auto;
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 378px){
+    .margen-responsivo{
+        margin-top: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 463px){
+    .margen-responsivo-2{
+        margin-top: 4.2rem;
+    }
+}
+
+
+.derecho-al-trabajo .btn-colapsar{
+    width: 800px;
+}
+
+.derecho-al-trabajo .btn-colapsar .btn-colapsar-layout {
+    display: grid;
+    /* grid-template-columns: minmax(1rem, 3rem) minmax(12.5rem, 1fr) 2rem; */
+    grid-template-columns: 3rem 1fr 3rem;
+    grid-template-rows: 1fr;
+    gap: 0px 1em;
+    grid-template-areas: ". . .";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.derecho-al-trabajo .colapsar-contenido {
+    background: #FBF7CB;
+    font-size: 1rem;
+    overflow: auto;
+    padding: 1rem 2rem;
+    width: 800px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 991px){
+    .derecho-al-trabajo .btn-colapsar{
+        width: 100%;
+    }
+
+    .derecho-al-trabajo .colapsar-contenido {
+        width: 100%;
+    }
+}
+
+
+.medidas-para-prevenir-la-discriminación .btn-colapsar-layout {
+    display: grid;
+    /* grid-template-columns: minmax(1rem, 3rem) minmax(12.5rem, 1fr) 2rem; */
+    grid-template-columns: 3rem 1fr 3rem;
+    grid-template-rows: 1fr;
+    gap: 0px 2em;
+    grid-template-areas: ". . .";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+/* Tema 1.2 */
+.declaracion-conferencia .btn-colapsar-layout {
+    gap: 0px 0em;
+}
+
+.marco-normativo-estatal .btn-colapsar-layout {
+    gap: 0px 0em;
+}
+
+
+/* Tema 1.1 */
+.contenedor-modales-2 {
+    text-align: center;
+    /* padding: 1em 0 2em; */
+}
+
+.contenedor-modales-2 button {
+    width: 100%;
+    max-width: 340px;
+    padding: 7px 12px;
+    min-height: 150px;
+    border-radius: 30px !important;
+}
+
+.contenedor-modales-2 p{
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    justify-content: center;
+}
+
+.contenedor-modales-2 i{
+    display: contents;
+    font-style: normal;
+}
+
+
+
+/* Tema 1.3 */
+.concentrado-documentos .btn-colapsar-layout {
+    gap: 0px 0em;
+}
+
+.ley-general-edu .btn-colapsar-layout,
+.legislacion-universitaria .btn-colapsar-layout{
+    display: grid;
+    grid-template-columns: 3rem 1fr 3rem;
+    grid-template-rows: 1fr;
+    gap: 0px 2em;
+    grid-template-areas: ". . .";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.btn-azul-2 {
+    color: #fff;
+    background-color: #436A71;
+    border: 2px solid #436A71 !important;
+    letter-spacing: 0.05em;
+    border-radius: 0;
+}
+
+.btn-azul-2:hover {
+    color: #436A71;
+    border: 2px solid #436A71 !important;
+    letter-spacing: 0.05em;
+    background-color: #fff;
+}
+
+.card-texto-1{
+    border-top: 12px solid #D45C5B;
+}
+
+@media screen and (max-width: 1199px){
+    .card-texto-1 img{
+        align-self: baseline;
+        /* width: 100%; */
+    }
+}
+
+@media screen and (max-width: 991px){
+    .card-texto-1 img{
+       width: 30%;
+    }
+}
+
+.video1-1 .btn-colapsar{
+    background-color: #436A71 !important;
+    color: #fff;
+}
+
+.video1-1 .btn-expandido {
+    background-color: #fff !important;
+}
+
+.video1-1 .expandido .btn-colapsar-icono {
+    color: #436A71;
+}
+
+.video1-1 .expandido .btn-colapsar-texto {
+    color: #436A71 !important;
+}
+
+.btn-change-color{
+    background-color: #436A71;
+    color: #fff;
+}
+
+.btn-change-color:hover{
+    background-color: #fff;
+    border: 2px solid #436A71 !important;
+    color: #436A71;
+}
+
+.modal .btn-primary{
+    background-color: #436A71 !important;
+}
+
+
+
+
+/* Tema 1.2 */
+
+.img-tema-2{
+    width: 25% !important;
+    height: auto !important;
+}
+
+@media screen and (max-width: 1199px){
+    .img-tema-2{
+        width: 30% !important;
+        height: auto !important;
+        align-self: baseline;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .img-tema-2{
+        width: 25% !important;
+        height: auto !important;
+        align-self: baseline;
+    }
+}
+
+/* Colapsador -- Declaración de la Conferencia Regional de la Educación Superior en América Latina y el Caribe (CRES-UNESCO 2008) --  */
+.colapsador-declaracion-1 .btn-colapsar{
+    background-color: #436A71 !important;
+    color: #fff;
+}
+
+.colapsador-declaracion-1 .btn-expandido {
+    background-color: #fff !important;
+}
+
+.colapsador-declaracion-1 .expandido .btn-colapsar-icono {
+    color: #436A71;
+}
+
+.colapsador-declaracion-1 .expandido .btn-colapsar-texto {
+    color: #436A71 !important;
+}
+
+.colapsador-declaracion-2 .btn-colapsar{
+    background-color: #365C60 !important;
+    color: #fff;
+}
+
+.colapsador-declaracion-2 .btn-expandido {
+    background-color: #fff !important;
+}
+
+.colapsador-declaracion-2 .expandido .btn-colapsar-icono {
+    color: #365C60;
+}
+
+.colapsador-declaracion-2 .expandido .btn-colapsar-texto {
+    color: #365C60 !important;
+}
+/*  */
+
+.card-declaracion-conferencia{
+    background-color: #F0FFFF;
+}
+
+/* Linea de tiempo 1 -- Marco nacional sobre los Derechos de las Personas en situación de Discapacidad​ -- */
+.linea-tiempo-1{
+    position: relative !important;
+}
+
+.l1{
+    color: #71CFF4;
+    font-weight: bold;
+}
+
+.l2{
+    color: #A571EB;
+    font-weight: bold;
+}
+
+.l3{
+    color: #D45C5B;
+    font-weight: bold;
+}
+
+.l4{
+    color: #C98C3D;
+    font-weight: bold;
+}
+
+.btn-linea-1{
+    border: none;
+    box-shadow: none !important;  
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Si se aprueba el grid quitar estos estilos ---------*/
+@media screen and (min-width: 1200px){
+    
+    .btn-linea-1:nth-child(1){
+        top: 0px;
+        left: 0;
+    }
+
+    .año-1{
+        position: absolute;
+        top: -10px;
+        left: 140px;
+    }
+
+    .btn-linea-1:nth-child(2){
+        top: 25px;
+        left: 250px;
+    }
+
+    .año-2{
+        position: absolute;
+        top: 110px;
+        left: 395px;
+    }
+
+    .btn-linea-1:nth-child(3){
+        top: 0px;
+        left: 500px;
+    }
+
+    .año-3{
+        position: absolute;
+        top: -10px;
+        left: 645px;
+    }
+
+    .btn-linea-1:nth-child(4){
+        top: 25px;
+        left: 750px;
+    }
+
+    .año-4{
+        position: absolute;
+        top: 110px;
+        left: 895px;
+    }
+
+    .img-linea-1{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 1199px){
+
+    .btn-linea-1{
+        width: 390px;
+        height: auto;
+    }
+    
+    .btn-linea-1:nth-child(1){
+        top: 0px;
+        left: -90px;
+    }
+
+    .año-1{
+        position: absolute;
+        top: -10px;
+        left: 87px;
+    }
+
+    .btn-linea-1:nth-child(2){
+        top: 21px;
+        left: 130px;
+    }
+
+    .año-2{
+        position: absolute;
+        top: 100px;
+        left: 305px;
+    }
+
+    .btn-linea-1:nth-child(3){
+        top: 0px;
+        left: 350px;
+    }
+
+    .año-3{
+        position: absolute;
+        top: -10px;
+        left: 525px;
+    }
+
+    .btn-linea-1:nth-child(4){
+        top: 21px;
+        left: 570px;
+    }
+
+    .año-4{
+        position: absolute;
+        top: 100px;
+        left: 746px;
+    }
+
+    .img-linea-1{
+        width: 70%;
+        height: auto;
+    }
+
+}
+/* ------------------------------------------------- */
+
+/* Aqui empiezan los estilos con grid ------------- */
+.btn-linea-2{
+    border: none !important;
+    box-shadow: none !important;  
+}
+
+.grid-img{
+    width: 110%;
+}
+
+@media screen and (max-width: 1199px){
+    .grid-img{
+        width: 100%;
+    }
+}
+
+.container-grid-años {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: auto 1fr auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "año-1 . año-3 ."
+        "flecha-btn-1 flecha-btn-2 flecha-btn-3 flecha-btn-4"
+        ". año-2 . año-4";
+    margin-left: -15px;
+}
+
+.flecha-btn-1 {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: flecha-btn-1; 
+}
+.flecha-btn-2 {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: flecha-btn-2; 
+    padding-top: 3em;
+}
+.flecha-btn-3 {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: flecha-btn-3; 
+}
+.flecha-btn-4 {
+    justify-self: center; 
+    align-self: center; 
+    grid-area: flecha-btn-4;
+    padding-top: 3em;
+}
+
+.grid-año-1 {
+    justify-self: center; 
+    align-self: end; 
+    grid-area: año-1; 
+}
+.grid-año-2 {
+    justify-self: center; 
+    align-self: start; 
+    grid-area: año-2; 
+}
+.grid-año-3 {
+    justify-self: center; 
+    align-self: end; 
+    grid-area: año-3; 
+}
+.grid-año-4 {
+    justify-self: center; 
+    align-self: start; 
+    grid-area: año-4; 
+}
+  
+.flecha-btn-1 { grid-area: flecha-btn-1; }
+
+.flecha-btn-2 { grid-area: flecha-btn-2; }
+
+.flecha-btn-3 { grid-area: flecha-btn-3; }
+
+.flecha-btn-4 { grid-area: flecha-btn-4; }
+
+.grid-año-1 { grid-area: año-1; }
+
+.grid-año-2 { grid-area: año-2; }
+
+.grid-año-3 { grid-area: año-3; }
+
+.grid-año-4 { grid-area: año-4; }
+
+@media screen and (max-width: 1199px){
+    .grid-img{
+        width: 100%;
+    }
+
+    .grid-año-1 .l1{margin-left: 0 !important;}
+
+    .grid-año-2 .l2{margin-left: 0 !important;}
+
+    .grid-año-3 .l3{margin-left: 0 !important;}
+
+    .grid-año-4 .l4{margin-left: 0 !important;}
+
+    .flecha-btn-2 .grid-img{margin-top: -8px;}
+
+    .flecha-btn-4 .grid-img{margin-top: -10px;}
+}
+
+/* ------------------- */
+
+/*  */
+
+/* Linea de tiempo 2 -- Plan Nacional de Desarrollo e Iclusión -- */
+
+.p1{color: #466C73;}
+
+.p2{color: #C98C3D;}
+
+.p3{color: #D45C5B;}
+
+.p4{color: #B58AEE;}
+
+.p5{color: #66B1D7;}
+
+.p6{color: #74AB80;}
+
+.container-grid-linea-2 {
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    grid-template-rows: 1fr 0.1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". periodo-2 . periodo-4 . periodo-6"
+      "area-imagen area-imagen area-imagen area-imagen area-imagen area-imagen"
+      "periodo-1 . periodo-3 . periodo-5 .";
+}
+  
+.area-imagen { 
+    grid-area: area-imagen;
+    z-index: 99;
+}
+
+.periodo-1 {
+    justify-self: stretch;
+    align-self: start;
+    grid-area: periodo-1;
+    
+}
+
+.periodo-2 {
+    justify-self: stretch;
+    align-self: end;
+    grid-area: periodo-2;
+    
+}
+
+.periodo-3 {
+    justify-self: stretch;
+    align-self: start;
+    grid-area: periodo-3;
+    
+}
+
+.periodo-4 {
+    justify-self: stretch;
+    align-self: end;
+    grid-area: periodo-4;
+    
+}
+
+.periodo-5 {
+    justify-self: stretch;
+    align-self: start;
+    grid-area: periodo-5;
+    
+}
+
+.periodo-6 {
+    justify-self: flex-start;
+    align-self: end;
+    grid-area: periodo-6;
+    
+}
+
+.btn-p1{
+    background-color: #fff;
+    border: 2px solid #50747A;
+    color: #50747A;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: bold;
+    width: 102%;
+    margin-top: -17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0; 
+    padding-right: 0;
+}
+
+.btn-p1:hover{
+    background-color: #50747A;
+    border: 2px solid #50747A;
+    color: #fff;
+}
+
+.btn-p2{
+    background-color: #fff;
+    border: 2px solid #C98C3D;
+    color: #C98C3D;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: bold;
+    width: 101%;
+    margin-bottom: -17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0; 
+    padding-right: 0;
+}
+
+.btn-p2:hover{
+    background-color: #C98C3D;
+    border: 2px solid #C98C3D;
+    color: #fff;
+}
+
+.btn-p3{
+    background-color: #fff;
+    border: 2px solid #D45C5B;
+    color: #D45C5B;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: bold;
+    width: 101%;
+    margin-top: -17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0; 
+    padding-right: 0;
+}
+
+.btn-p3:hover{
+    background-color: #D45C5B;
+    border: 2px solid #D45C5B;
+    color: #fff;
+}
+
+.btn-p4{
+    background-color: #fff;
+    border: 2px solid #B58AEE;
+    color: #B58AEE;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: bold;
+    width: 101%;
+    margin-bottom: -17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0; 
+    padding-right: 0;
+}
+
+.btn-p4:hover{
+    background-color: #B58AEE;
+    border: 2px solid #B58AEE;
+    color: #fff;
+}
+
+.btn-p5{
+    background-color: #fff;
+    border: 2px solid #66B1D7;
+    color: #66B1D7;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: bold;
+    width: 101%;
+    margin-top: -17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0; 
+    padding-right: 0;
+}
+
+.btn-p5:hover{
+    background-color: #66B1D7;
+    border: 2px solid #66B1D7;
+    color: #fff;
+}
+
+.btn-p6{
+    background-color: #fff;
+    border: 2px solid #74AB80;
+    color: #74AB80;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: bold;
+    width: 177.59px;
+    margin-bottom: -17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0; 
+    padding-right: 0;
+}
+
+.btn-p6:hover{
+    background-color: #74AB80;
+    border: 2px solid #74AB80;
+    color: #fff;
+}
+
+@media screen and (max-width: 1199px){
+
+    /* .linea-tiempo-2 .btn{
+        padding: 8px 1.5rem !important;
+    } */
+
+    .ajuste-width-linea{
+        width: 101.5% !important;
+    }
+
+    .btn-p6{
+        width: 148.8px !important;
+    }
+
+}
+
+/*  */
+
+/* Colapsador -- Concentrado de documentos que sustentarán la obligatoriedad de la inclusión en las universidades --  */
+.colapsador-concentrado-1 .btn-colapsar{
+    background-color: #F6BD6A !important;
+    color: #000;
+}
+
+.colapsador-concentrado-1 .btn-expandido {
+    background-color: #fff !important;
+}
+
+.colapsador-concentrado-1 .btn-colapsar-icono {
+    color: #000 !important;
+}
+
+.colapsador-concentrado-1 .expandido .btn-colapsar-icono {
+    color: #000;
+}
+
+.colapsador-concentrado-1 .btn-colapsar-texto {
+    color: #000 !important;
+}
+
+.colapsador-concentrado-1 .expandido .btn-colapsar-texto {
+    color: #000 !important;
+}
+
+.colapsador-concentrado-2 .btn-colapsar{
+    background-color: #E5A65C !important;
+    color: #000;
+}
+
+.colapsador-concentrado-2 .btn-expandido {
+    background-color: #fff !important;
+}
+
+.colapsador-concentrado-2 .btn-colapsar-icono {
+    color: #000 !important;
+}
+
+.colapsador-concentrado-2 .expandido .btn-colapsar-icono {
+    color: #000;
+}
+
+.colapsador-concentrado-2 .btn-colapsar-texto {
+    color: #000 !important;
+}
+
+.colapsador-concentrado-2 .expandido .btn-colapsar-texto {
+    color: #000 !important;
+}
+
+.card-concentrado-doctos{
+    background-color: #fff1e1;
+}
+
+.card-ley-legislacion{
+    background-color: #ffd7d7;
+}
+
+/*  */
+
+/* Colapsador -- Ley General de Educación Superior​
+Título Primero. Del derecho a la educación superior​
+Capítulo primero. Disposiciones generales​ --  */
+
+.colapsador-leygral-1 .btn-colapsar{
+    background-color: #D45C5B !important;
+    color: #fff;
+}
+
+.colapsador-leygral-1 .btn-expandido {
+    background-color: #fff !important;
+}
+
+.colapsador-leygral-1 .expandido .btn-colapsar-icono {
+    color: #D45C5B;
+}
+
+.colapsador-leygral-1 .expandido .btn-colapsar-texto {
+    color: #D45C5B !important;
+}
+
+.colapsador-leygral-2 .btn-colapsar{
+    background-color: #CE5252 !important;
+    color: #fff;
+}
+
+.colapsador-leygral-2 .btn-expandido {
+    background-color: #fff !important;
+}
+
+.colapsador-leygral-2 .expandido .btn-colapsar-icono {
+    color: #CE5252;
+}
+
+.colapsador-leygral-2 .expandido .btn-colapsar-texto {
+    color: #CE5252 !important;
+}
+
+
+/*  */
+
+
+.bg-verde-claro{
+    background-color: #E8F9ED;
+}
+
+
+.bg-esquema-f1{
+    background-color: #FFF7F3;
+}
+
+.esquema-f1{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.esquema .btn-colapsar-layout{
+    display: grid;
+    grid-template-columns: 3rem 1fr 3rem;
+    grid-template-rows: 1fr;
+    gap: 0px 1em;
+    grid-template-areas: ". . .";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.esquema .btn-colapsar {
+    background-color: #436A71 !important;
+    border: #436A71 2px solid;
+    color: #fff;
+}
+
+
+.esquema .btn-expandido {
+    background-color: #fff !important;
+    border: #436A71 2px solid;
+}
+
+.esquema .expandido .btn-colapsar-texto {
+    color: #436A71 !important;
+}
+
+.esquema .expandido .btn-colapsar-icono {
+    color: #436A71;
+}
+
+
+
+.ejes .btn-colapsar-layout {
+    display: grid;
+    /* grid-template-columns: minmax(1rem, 3rem) minmax(12.5rem, 1fr) 2rem; */
+    grid-template-columns: 0rem 1fr 3rem;
+    grid-template-rows: 1fr;
+    gap: 0px 0em;
+    grid-template-areas: ". . .";
+    justify-content: center;
+    align-content: center;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.ejes .btn-colapsar {
+    background-color: #436A71 !important;
+    border: #436A71 2px solid;
+    color: #fff;
+}
+
+.ejes .btn-expandido {
+    background-color: #fff !important;
+    border: #436A71 2px solid;
+}
+
+.ejes .expandido .btn-colapsar-texto {
+    color: #436A71 !important;
+}
+
+.ejes .expandido .btn-colapsar-icono {
+    color: #436A71;
+}
+
+.ejes .colapsar-contenido{
+    background: rgb(234,247,251);
+    background: linear-gradient(177deg, rgba(234,247,251,1) 0%, rgba(243,251,253,1) 51%, rgba(255,255,255,1) 100%);
+}
+
+
+
+.text-ejes{
+    color: #436A71;
+    font-weight: bold;
+}
+
+.movil .ejes:nth-child(1n){
+    background-color: #EAF7FB;
+    padding: .8em;
+}
+
+.movil .ejes:nth-child(2n){
+    background-color: #FFF;
+    padding: .8em;
+}
+
+.esquema-2{
+    background-color: #EDF4E9;
+    padding: 1.7em;
+}
+
+
+.esquema-grid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1em;
+}
+
+.esquema-grid button{
+    padding: 1em 5em;
+    border-radius: 8px !important;
+}
+
+@media screen and (max-width: 1199px){
+    .esquema-grid button{
+        padding: 1em 4em;
+    }   
+}
+
+@media screen and (max-width: 991px){
+    .esquema-grid button{
+        padding: 1em 2em;
+    }   
+}
+
+
+/* Tema 1.2  dimensiones modales*/
+
+.dimensiones-modals .esquema-grid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    margin-top: 1em;
+}
+
+.dimensiones-modals .esquema-grid button{
+    padding: 1em 1em;
+    border-radius: 8px !important;
+}
+
+@media screen and (max-width: 1199px){
+    .dimensiones-modals .esquema-grid button{
+        padding: 1em 0em;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .dimensiones-modals .esquema-grid button{
+        padding: 1em 2em;
+    }
+    
+    .dimensiones-modals .esquema-grid{
+        gap: 10px;
+    }
+}
+
+.bg-dimensiones:nth-child(1n){
+    background-color: #FFF1E1;
+}
+
+.bg-dimensiones:nth-child(2n){
+    background-color: #FFF;
+}
+
+.dimensiones-grid{
+    display: flex;
+    align-items: center;
+    background-color: #F9D19D;
+    color: black;
+    padding: 1em;
+    border-right: 2px solid #476C72;
+    border-bottom: 2px solid #476C72;
+    height: 97px
+}
+
+.dimensiones-grid-2{
+    background-color: #EDF4E9;
+    color: black;
+    padding: 1em;
+    border-right: 2px solid #476C72;
+    border-bottom: 2px solid #476C72;
+    height: 130px;
+}
+
+.tabla-dimensiones{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.tabla-dimensiones .width-dimen{
+    width: 33.33%;
+}
+
+@media screen and (max-width: 1199px){
+    .dimensiones-grid-2{
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    
+    .dimensiones-grid{
+        height: 115px;
+        padding: 0.5em;
+    }
+
+    .dimensiones-grid-2{
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    
+    .tabla-dimensiones{
+        display: block;
+    }
+    .tabla-dimensiones .width-dimen{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .dimensiones-grid{
+        height: auto;
+        border-right: none;
+    }
+
+    .dimensiones-grid-2{
+        height: auto;
+        border-right: none;
+    }
+}
+
+.bap-cuadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+@media screen and (max-width: 767px){
+    .bap-cuadro{
+        display: block;
+    }   
+
+    .card-texto-1 img {
+        width: 100%;
+    }
+}
+
+
+/* Estilos swiper - tarjetas deslizables */
+
+.swiper {
+    width: 90%;
+    height: 500px;
+}
+  
+@media screen and (max-width: 1340px) {
+    .swiper {
+        width: 80%;
+        height: 520px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .swiper {
+        width: 80%;
+        height: 580px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .swiper {
+        width: 90%;
+        height: 620px;
+    }
+}
+  
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 1.3em;
+    font-weight: normal;
+    color: #000;
+}
+  
+.swiper-slide:nth-child(1n) {
+    background-color: #F3F9F8;
+}
+  
+.swiper-slide:nth-child(2n) {
+    background-color: #FEEFE9;
+}
+  
+.swiper-slide:nth-child(3n) {
+    background-color: #EBF7FF;
+}
+  
+.swiper-slide:nth-child(4n) {
+    background-color: #FFFDEB;
+}
+
+  
+.bg-responsivo-tarjeta:nth-child(1n){
+    background-color: #F3F9F8;
+}
+
+.bg-responsivo-tarjeta:nth-child(2n){
+    background-color: #FEEFE9;
+}
+
+.bg-responsivo-tarjeta:nth-child(3n){
+    background-color: #EBF7FF;
+}
+
+.bg-responsivo-tarjeta:nth-child(4n){
+    background-color: #FFFDEB;
+}
+
+.text-grey{
+    color: #393E41;
+    font-weight: 700;
+}
+  
+/*  */
+
+.table-bordered {
+    border: none !important;
+}
+
+td, th {
+    border: 1px solid #436A71 !important;
+}
+
+
+table tr:nth-child(1){
+    background-color: #F9D19D !important;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table tr:nth-child(odd){
+    background-color: #FFF7F3;
+    color: #000;
+    vertical-align: middle;
+}
+
+
+table tr:nth-child(even){
+    background-color: #EDF4E9;
+    color: #000;
+    vertical-align: middle;
+}
+
+.bg-morado-modals{
+    background-color: #F5EEFF;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.bg-morado-modals button{
+    padding: 1em 1em;
+}
+
+.bg-beige{
+    background-color: #FFF7F3;
+}
+
+.lista-aspectos li span{
+    font-weight: bold;
+}
+
+.lista-aspectos li{
+    margin-top: 1em;
+}
+
+.aspectos-grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.aspectos-grid button{
+    padding: 1em 0.3em;
+    flex: 0 0 30%;
+}
+
+@media screen and (max-width: 991px) {
+    .aspectos-grid button{
+        flex: 1 1 32%;
+    }
+}
+
+
+/* Para ocultar las tarjetas que no se ven */
+.swiper-cards {
+    overflow: hidden !important;
+}

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Información general</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i" rel="stylesheet">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="styles/css/index.css">
+    <link rel="stylesheet" href="styles/css/info-gral.css">
+
+    <!-- Recurso para al hacer scroll vayan a apareciendo las secciones -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+
+    <!-- Barra de progreso en la parte superior -->
+    <div id="progress"></div>
+
+    <header class="banner-1">
+
+        <div class="js-pleca pleca">
+
+            <a class="pleca__uv" href="https://uv.mx/" target="__blank">Universidad Veracruzana</a>
+            
+            <div class="pleca__ee container" style="display: none;">
+                <span class="text-left aparecer-desaparecer">
+                    <h1 class="tam-font font-weight-bold text-dark mb-0" style="margin-top: 10px;">
+                        <span class="text-azul">Información</span> general
+                    </h1> <br>
+                </span>
+            </div>
+
+        </div>
+
+    </header>
+    
+    <button type="button" class="btn btn-info js-sidebar__collapse sidebar__collapse" style="display: block !important;" aria-pressed="false" aria-expanded="false" aria-label="Menú">
+        <span>MEN&Uacute;</span>&nbsp;&nbsp;<i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Menú -->
+    <navbar id="menu-item" class="sidebar" style="overflow-y: scroll;" role="navigation" aria-label="Menú" name="Menú">
+
+        <div class="sidebar__encabezado">
+            <button class="btn btn-link sidebar__dismiss" aria-label="Cerrar menú desplegado">
+                <i class="fas fa-arrow-left sidebar__icono"></i>
+            </button>
+        </div>
+        
+        <menu-component></menu-component>
+    
+        <!-- <div class="sidebar__encabezado">
+            <button class="btn btn-link sidebar__dismiss" aria-label="Cerrar menú desplegado">
+                <i class="fas fa-arrow-left sidebar__icono"></i>
+            </button>
+        </div> -->
+        
+    </navbar>
+
+    <!-- Código principal -->
+    <main>
+        
+        <div class="container">
+
+            <img src="" alt="">
+
+            <!-- Presentación -->
+            <section class="presentacion">
+
+                <br><br><br>
+
+                <h2 class="titulo--actividad-texto mt-5 mb-4">
+                    <img src="./images/home/icono-subtitulo.png" width="20px" height="auto" alt="icono">
+                    Información general
+                </h2>
+
+                <p class="parrafo">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo et corporis inventore accusamus? Natus, deserunt consectetur saepe corporis debitis tempora alias voluptas quos, dolores neque voluptates, quaerat veniam quod!
+                    Itaque modi accusantium earum nihil officia amet obcaecati porro tempore iste nam veritatis, odit asperiores consequuntur voluptatem unde sint corporis ipsam dicta excepturi eius quo ut exercitationem alias! Repellat, temporibus.
+                    Nobis odio, ducimus placeat soluta harum tenetur iure aspernatur saepe incidunt obcaecati modi fugiat quia mollitia, asperiores nulla accusamus fuga nemo nihil laudantium numquam nam neque itaque? Nisi, deserunt quos.
+                    Nihil voluptatem tenetur omnis tempore deleniti maiores obcaecati modi sit ratione consequuntur reiciendis id possimus non, animi facilis quas voluptatum porro libero. Alias ea quos cupiditate commodi, quod blanditiis repellat?
+                    Voluptatum dolorem minima tempore facere, explicabo repellendus error vero vitae magnam eaque repudiandae debitis natus doloribus quod nostrum fuga. Temporibus amet atque saepe itaque eveniet hic fugiat, animi voluptatem commodi?
+                    Explicabo omnis porro vel placeat. Explicabo vel consectetur modi cum dolore. Quaerat ducimus debitis reiciendis tempora aspernatur, repudiandae, at sunt eligendi inventore nostrum atque nemo hic ipsum nulla. Ab, expedita!
+                </p>
+
+                <div class="escritorio">
+
+                    <div class="modal-layout" style="gap: 5em;">
+
+                        <div class="text-center">
+    
+                            <img src="./images/home/O/DIPD_actividad.png" width="30%" height="auto" alt="">
+    
+                            <button class="modals-info btn" data-toggle="modal" data-target="#modal-1">
+                                Esquema 1
+                            </button>
+    
+                        </div>
+    
+                        <div class="text-center">
+    
+                            <img src="./images/home/O/DIPD_anotaciones.png" width="30%" height="auto" alt="">
+    
+                            <button accesskey="1" tabindex="0" class="modals-info btn" data-toggle="modal" data-target="#modal-2">
+                                Esquema 2
+                            </button>
+    
+                        </div>
+    
+                    </div>
+
+                </div>
+
+                <div class="movil mt-4 mb-4">
+
+                    <div class="card p-3">
+
+                        <p class="parrafo">
+                            <strong>Esquema 1</strong>
+                        </p>
+
+                        <p class="parrafo mb-0">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quia, eum rem aut iure alias modi cumque fugiat, tempore officia necessitatibus! Sapiente itaque rerum ducimus omnis? Provident sint repudiandae odit?
+                            Quod odit vero et assumenda illo ea esse quia veniam porro qui possimus, voluptate aliquid sed hic odio libero repellendus sint labore optio iusto, soluta id adipisci. Asperiores, harum beatae.
+                            Ullam, vero eum quisquam nisi fuga omnis? Nesciunt natus placeat pariatur iste perspiciatis distinctio quidem non temporibus perferendis officia omnis, soluta sit repudiandae sequi, incidunt porro quisquam! Autem, pariatur ducimus!
+                            Libero ipsam labore a ad atque, illum vero eveniet repellat dolores laboriosam nisi voluptatem incidunt cumque voluptas doloremque dolore. Assumenda delectus quia nihil quam, adipisci consequatur repellendus ab dolore facere!
+                            Praesentium rem voluptatum recusandae repudiandae, officiis dolore error sit modi sint obcaecati voluptatibus? Eligendi sint maxime doloribus veniam voluptatum iure porro adipisci tempore earum. Itaque at id labore exercitationem harum!
+                            Totam quod consectetur earum eum natus odit fugit soluta nihil voluptatum excepturi iure dolorum rerum sed saepe officia nisi reprehenderit facilis, molestiae delectus repudiandae sunt molestias sapiente. Temporibus, placeat tempore.
+                            Corrupti similique fugiat totam cupiditate! Iste quis saepe tenetur sunt eos deserunt veritatis cupiditate nesciunt in temporibus nostrum laudantium laboriosam perspiciatis quisquam, necessitatibus dolorum ratione earum officiis rem voluptate quae?
+                            Maxime, quas error, provident, voluptatum neque quibusdam sit exercitationem cupiditate voluptate aut quae doloribus cum ipsam. Nam earum suscipit necessitatibus debitis ducimus aspernatur consectetur, aut eos odit. Obcaecati, accusamus consequuntur!
+                            Adipisci consequuntur necessitatibus suscipit optio, harum eum quisquam doloremque animi vitae, labore ex totam nostrum ab quidem tenetur saepe minus ut molestiae hic qui aspernatur doloribus inventore voluptatibus? Iure, eum.
+                            Beatae reprehenderit quos eaque expedita consequatur esse recusandae nemo laboriosam, distinctio totam quidem voluptatem. Alias nihil voluptatibus praesentium cupiditate soluta dolorum, dolore, distinctio sunt molestias consectetur nulla aliquid excepturi velit.
+                        </p>
+
+                    </div>
+
+                    <div class="card p-3 mt-4">
+
+                        <p class="parrafo">
+                            <strong>Esquema 2</strong>
+                        </p>
+
+                        <p class="parrafo mb-0">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quia, eum rem aut iure alias modi cumque fugiat, tempore officia necessitatibus! Sapiente itaque rerum ducimus omnis? Provident sint repudiandae odit?
+                            Quod odit vero et assumenda illo ea esse quia veniam porro qui possimus, voluptate aliquid sed hic odio libero repellendus sint labore optio iusto, soluta id adipisci. Asperiores, harum beatae.
+                            Ullam, vero eum quisquam nisi fuga omnis? Nesciunt natus placeat pariatur iste perspiciatis distinctio quidem non temporibus perferendis officia omnis, soluta sit repudiandae sequi, incidunt porro quisquam! Autem, pariatur ducimus!
+                            Libero ipsam labore a ad atque, illum vero eveniet repellat dolores laboriosam nisi voluptatem incidunt cumque voluptas doloremque dolore. Assumenda delectus quia nihil quam, adipisci consequatur repellendus ab dolore facere!
+                            Praesentium rem voluptatum recusandae repudiandae, officiis dolore error sit modi sint obcaecati voluptatibus? Eligendi sint maxime doloribus veniam voluptatum iure porro adipisci tempore earum. Itaque at id labore exercitationem harum!
+                            Totam quod consectetur earum eum natus odit fugit soluta nihil voluptatum excepturi iure dolorum rerum sed saepe officia nisi reprehenderit facilis, molestiae delectus repudiandae sunt molestias sapiente. Temporibus, placeat tempore.
+                            Corrupti similique fugiat totam cupiditate! Iste quis saepe tenetur sunt eos deserunt veritatis cupiditate nesciunt in temporibus nostrum laudantium laboriosam perspiciatis quisquam, necessitatibus dolorum ratione earum officiis rem voluptate quae?
+                            Maxime, quas error, provident, voluptatum neque quibusdam sit exercitationem cupiditate voluptate aut quae doloribus cum ipsam. Nam earum suscipit necessitatibus debitis ducimus aspernatur consectetur, aut eos odit. Obcaecati, accusamus consequuntur!
+                            Adipisci consequuntur necessitatibus suscipit optio, harum eum quisquam doloremque animi vitae, labore ex totam nostrum ab quidem tenetur saepe minus ut molestiae hic qui aspernatur doloribus inventore voluptatibus? Iure, eum.
+                            Beatae reprehenderit quos eaque expedita consequatur esse recusandae nemo laboriosam, distinctio totam quidem voluptatem. Alias nihil voluptatibus praesentium cupiditate soluta dolorum, dolore, distinctio sunt molestias consectetur nulla aliquid excepturi velit.
+                        </p>
+                        
+                    </div>
+
+                </div>
+
+                <h2 class="titulo--actividad-texto mt-5 mb-4">
+                    <img src="./images/home/icono-subtitulo.png" width="20px" height="auto" alt="icono">
+                    Lorem ipsum dolor
+                </h2>
+
+                <p class="parrafo">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo et corporis inventore accusamus? Natus, deserunt consectetur saepe corporis debitis tempora alias voluptas quos, dolores neque voluptates, quaerat veniam quod!
+                    Itaque modi accusantium earum nihil officia amet obcaecati porro tempore iste nam veritatis, odit asperiores consequuntur voluptatem unde sint corporis ipsam dicta excepturi eius quo ut exercitationem alias! Repellat, temporibus.
+                </p>
+
+                <div class="escritorio">
+
+                    <p class="parrafo instruccion-color--verde">
+                        <b>Instrucción:</b> Haz clic en cada para leer la información.
+                    </p>
+
+                    <div class="colapsador">
+
+                        <button id="faq1"
+                        data-toggle="collapse" data-target="#basicas-1" 
+                        class="btn btn-colapsar waves-effect waves-light collapsed" aria-expanded="false">
+                            <div class="btn-colapsar-layout">
+                                <span class="linea linea--naranja"></span>
+                                <span class="btn-colapsar-texto">Lorem ipsum dolor</span>
+                                <span class="btn-colapsar-icono"><i class="fas fa-plus"></i></span>
+                            </div>
+                        </button>
+            
+                        <section id="basicas-1" class="collapse">
+    
+                            <h3 class="sr-only">
+                                Básicas
+                            </h3>
+    
+                            <div class="colapsar-contenido">
+    
+                                <p class="parrafo mb-0">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, sed. Magni culpa dolorum est. Repellendus libero placeat ad ea odio in ab minima maiores, tempore illum mollitia obcaecati illo atque.
+                                    Voluptates quaerat corrupti voluptate atque aliquam error asperiores aspernatur sequi at nulla. Perferendis aspernatur, fugit necessitatibus ea inventore similique nobis quod saepe mollitia facilis earum, neque nemo voluptatem odit dicta.
+                                    Similique mollitia voluptates sint reiciendis molestias cumque quia eligendi fugit maiores doloribus quo, laudantium dolores accusantium ipsam aliquam commodi nam eveniet expedita voluptas praesentium libero, eos ullam. Maxime, rerum amet.
+                                </p>
+    
+                            </div>
+    
+                        </section>
+            
+                    </div>
+
+                    <div class="colapsador">
+
+                        <button data-toggle="collapse" data-target="#basicas-2" class="btn btn-colapsar waves-effect waves-light collapsed" aria-expanded="false">
+                            <div class="btn-colapsar-layout">
+                                <span class="linea linea--naranja"></span>
+                                <span class="btn-colapsar-texto">Lorem ipsum dolor</span>
+                                <span class="btn-colapsar-icono"><i class="fas fa-plus"></i></span>
+                            </div>
+                        </button>
+            
+                        <section id="basicas-2" class="collapse">
+    
+                            <div class="colapsar-contenido">
+    
+                                <p class="parrafo mb-0">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, sed. Magni culpa dolorum est. Repellendus libero placeat ad ea odio in ab minima maiores, tempore illum mollitia obcaecati illo atque.
+                                    Voluptates quaerat corrupti voluptate atque aliquam error asperiores aspernatur sequi at nulla. Perferendis aspernatur, fugit necessitatibus ea inventore similique nobis quod saepe mollitia facilis earum, neque nemo voluptatem odit dicta.
+                                    Similique mollitia voluptates sint reiciendis molestias cumque quia eligendi fugit maiores doloribus quo, laudantium dolores accusantium ipsam aliquam commodi nam eveniet expedita voluptas praesentium libero, eos ullam. Maxime, rerum amet.
+                                </p>
+    
+                            </div>
+    
+                        </section>
+            
+                    </div>
+
+                    <div class="colapsador">
+
+                        <button data-toggle="collapse" data-target="#basicas-3" class="btn btn-colapsar waves-effect waves-light collapsed" aria-expanded="false">
+                            <div class="btn-colapsar-layout">
+                                <span class="linea linea--naranja"></span>
+                                <span class="btn-colapsar-texto">Lorem ipsum dolor</span>
+                                <span class="btn-colapsar-icono"><i class="fas fa-plus"></i></span>
+                            </div>
+                        </button>
+            
+                        <section id="basicas-3" class="collapse">
+    
+                            <div class="colapsar-contenido">
+    
+                                <p class="parrafo mb-0">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, sed. Magni culpa dolorum est. Repellendus libero placeat ad ea odio in ab minima maiores, tempore illum mollitia obcaecati illo atque.
+                                    Voluptates quaerat corrupti voluptate atque aliquam error asperiores aspernatur sequi at nulla. Perferendis aspernatur, fugit necessitatibus ea inventore similique nobis quod saepe mollitia facilis earum, neque nemo voluptatem odit dicta.
+                                    Similique mollitia voluptates sint reiciendis molestias cumque quia eligendi fugit maiores doloribus quo, laudantium dolores accusantium ipsam aliquam commodi nam eveniet expedita voluptas praesentium libero, eos ullam. Maxime, rerum amet.
+                                </p>
+    
+                            </div>
+    
+                        </section>
+            
+                    </div>
+
+                    <div class="colapsador">
+
+                        <button data-toggle="collapse" data-target="#basicas-4" class="btn btn-colapsar waves-effect waves-light collapsed" aria-expanded="false">
+                            <div class="btn-colapsar-layout">
+                                <span class="linea linea--naranja"></span>
+                                <span class="btn-colapsar-texto">Lorem ipsum dolor</span>
+                                <span class="btn-colapsar-icono"><i class="fas fa-plus"></i></span>
+                            </div>
+                        </button>
+            
+                        <section id="basicas-4" class="collapse">
+    
+                            <div class="colapsar-contenido">
+    
+                                <p class="parrafo mb-0">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, sed. Magni culpa dolorum est. Repellendus libero placeat ad ea odio in ab minima maiores, tempore illum mollitia obcaecati illo atque.
+                                    Voluptates quaerat corrupti voluptate atque aliquam error asperiores aspernatur sequi at nulla. Perferendis aspernatur, fugit necessitatibus ea inventore similique nobis quod saepe mollitia facilis earum, neque nemo voluptatem odit dicta.
+                                    Similique mollitia voluptates sint reiciendis molestias cumque quia eligendi fugit maiores doloribus quo, laudantium dolores accusantium ipsam aliquam commodi nam eveniet expedita voluptas praesentium libero, eos ullam. Maxime, rerum amet.
+                                </p>
+    
+                            </div>
+    
+                        </section>
+            
+                    </div>
+
+                </div>
+
+                <div class="movil">
+
+                    <div class="bg-responsive-collapse p-3">
+
+                        <p class="parrafo font-weight-bold">
+                            Contexto médico-asistencial
+                        </p>
+
+                        <p class="parrafo mb-0">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta ipsum, expedita molestias sed adipisci veritatis mollitia illo eius quae. Aliquid error porro nisi, ex ipsum molestias officiis minima eligendi?
+                            Illo odio eos esse inventore neque itaque distinctio sit sed tenetur porro! Officiis ea qui inventore vel esse, est beatae perspiciatis ullam neque non enim praesentium repudiandae aut vitae eaque?
+                        </p>
+
+                    </div>
+
+                    <div class="bg-responsive-collapse p-3">
+
+                        <p class="parrafo font-weight-bold">
+                            Contexto de los pacientes
+                        </p>
+
+                        <p class="parrafo mb-0">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta ipsum, expedita molestias sed adipisci veritatis mollitia illo eius quae. Aliquid error porro nisi, ex ipsum molestias officiis minima eligendi?
+                            Illo odio eos esse inventore neque itaque distinctio sit sed tenetur porro! Officiis ea qui inventore vel esse, est beatae perspiciatis ullam neque non enim praesentium repudiandae aut vitae eaque?
+                        </p>
+
+                    </div>
+
+                    <div class="bg-responsive-collapse p-3">
+
+                        <p class="parrafo font-weight-bold">
+                            Contexto sociológico
+                        </p>
+
+                        <p class="parrafo mb-0">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta ipsum, expedita molestias sed adipisci veritatis mollitia illo eius quae. Aliquid error porro nisi, ex ipsum molestias officiis minima eligendi?
+                            Illo odio eos esse inventore neque itaque distinctio sit sed tenetur porro! Officiis ea qui inventore vel esse, est beatae perspiciatis ullam neque non enim praesentium repudiandae aut vitae eaque?
+                        </p>
+
+                    </div>
+
+                    <div class="bg-responsive-collapse p-3">
+
+                        <p class="parrafo font-weight-bold">
+                            Contexto económico y político
+                        </p>
+
+                        <p class="parrafo mb-0">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta ipsum, expedita molestias sed adipisci veritatis mollitia illo eius quae. Aliquid error porro nisi, ex ipsum molestias officiis minima eligendi?
+                            Illo odio eos esse inventore neque itaque distinctio sit sed tenetur porro! Officiis ea qui inventore vel esse, est beatae perspiciatis ullam neque non enim praesentium repudiandae aut vitae eaque?
+                        </p>
+
+                    </div>
+                </div>
+
+            </section>
+            <!--  -->
+
+        </div>
+
+        <br><br><br>
+
+    </main>
+
+    <footer class="pie-pagina">
+       
+        <img src="images//home/banner-footer.png" alt="Logo de la Universidad Veracruzana" width="100%" height="auto">
+       
+    </footer>
+
+
+    <div class="overlay"></div>
+
+    <div class="modal animate__animated animate__zoomInUp" id="modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <hr class="linea-modales">
+
+                    <div class="mx-3">
+
+                        <div class="text-center mt-4 mb-4">
+
+                            <img src="./images/home/DIPD_expertocontenido.png" width="12%" height="auto" alt="Imagen de experto en contenido">
+    
+                            <p class="parrafo">
+                                Esquema 1
+                            </p>
+    
+                        </div>
+
+                        <p class="parrafo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet qui delectus, facere id iste quod enim, totam quae asperiores eos, consequatur perferendis fuga necessitatibus vero maiores neque dicta ex facilis.
+                            Distinctio asperiores, rerum aspernatur nesciunt adipisci, possimus ratione illo quia commodi sit voluptates cumque mollitia non cupiditate quasi voluptatum maiores quibusdam dicta exercitationem excepturi minima placeat maxime. Quod, ipsam assumenda?
+                            Totam eaque velit incidunt sequi corporis. Unde, doloremque. Nisi tempora cupiditate nemo? Provident, quod. Ullam, consectetur magnam delectus alias perspiciatis sequi eos maiores, laboriosam praesentium vitae doloribus voluptates libero sapiente!
+                            Facilis error maiores obcaecati corrupti! Eius minima fugit ipsum blanditiis dignissimos at tempore atque sit neque tempora, magnam, dicta distinctio possimus inventore dolorem tenetur, omnis sint quos. Iure, error commodi.
+                            Quam illo dicta quas eos voluptatum commodi molestiae veniam, dolores id dolorum culpa iure totam! A ipsum eveniet consequatur aliquid inventore aut molestiae nemo impedit porro exercitationem, minima doloremque voluptate.
+                        </p>
+
+                    </div>
+
+                   
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cerrar-modal" style="border-radius: 7px;" data-dismiss="modal">Cerrar</button>
+                </div>               
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal animate__animated animate__zoomInUp" id="modal-2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <hr class="linea-modales">
+
+                    <div class="mx-3">
+
+                        <div class="text-center mt-4 mb-4">
+
+                            <img src="./images/home/DIPD_expertocontenido.png" width="12%" height="auto" alt="Imagen de experto en contenido">
+    
+                            <p class="parrafo">
+                                Esquema 2
+                            </p>
+    
+                        </div>
+
+                        <p class="parrafo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet qui delectus, facere id iste quod enim, totam quae asperiores eos, consequatur perferendis fuga necessitatibus vero maiores neque dicta ex facilis.
+                            Distinctio asperiores, rerum aspernatur nesciunt adipisci, possimus ratione illo quia commodi sit voluptates cumque mollitia non cupiditate quasi voluptatum maiores quibusdam dicta exercitationem excepturi minima placeat maxime. Quod, ipsam assumenda?
+                            Totam eaque velit incidunt sequi corporis. Unde, doloremque. Nisi tempora cupiditate nemo? Provident, quod. Ullam, consectetur magnam delectus alias perspiciatis sequi eos maiores, laboriosam praesentium vitae doloribus voluptates libero sapiente!
+                            Facilis error maiores obcaecati corrupti! Eius minima fugit ipsum blanditiis dignissimos at tempore atque sit neque tempora, magnam, dicta distinctio possimus inventore dolorem tenetur, omnis sint quos. Iure, error commodi.
+                            Quam illo dicta quas eos voluptatum commodi molestiae veniam, dolores id dolorum culpa iure totam! A ipsum eveniet consequatur aliquid inventore aut molestiae nemo impedit porro exercitationem, minima doloremque voluptate.
+                        </p>
+
+                    </div>
+
+                   
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cerrar-modal" style="border-radius: 7px;" data-dismiss="modal">Cerrar</button>
+                </div>               
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+
+    <script src="scripts/js/home.js"></script>
+    <script src="scripts/js/annyang-2.js"></script> <!-- Comandos por voz -->
+    <script src="scripts/js/info-gral.js"></script>
+    <script type="text/javascript" src="scripts/js/menu.js"></script>
+
+
+    <!-- Funcionalidad para Progress-bar-scroll del inicio -->
+    <script src="./scripts/js/scroll-timeline.js"></script>
+
+    <script>
+
+        // Create ScrollTimeline
+        const myScrollTimeline = new ScrollTimeline({
+            source: document.scrollingElement,
+            scrollSource: document.scrollingElement, // For legacy implementations
+            orientation: 'block',
+            scrollOffsets: [
+                new CSSUnitValue(0, 'percent'),
+                new CSSUnitValue(100, 'percent'),
+            ],
+        });
+
+        // Animate Progress Bar on Scroll
+        new Animation(
+            new KeyframeEffect(
+                document.querySelector('#progress'),
+                {
+                    transform: ['scaleX(0)', 'scaleX(1)'],
+                },
+                { duration: 1, fill: "forwards" }
+            ),
+            myScrollTimeline
+        ).play();
+
+    </script>
+    <!--  -->
+
+   
+</body>
+</html>

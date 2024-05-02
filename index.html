@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prueba de comandos por voz</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700,700i" rel="stylesheet">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="styles/css/index.css">
+    <!-- Recurso para al hacer scroll vayan a apareciendo las secciones -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- BoxIcons -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Libreria para animar los recursos-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<div id="readline" style="display: flex; z-index: 2147483647 !important; left: 0px; top: 10px;"></div>
+
+<body>
+
+    <div id="progress"></div>
+
+    <button type="button" class="btn btn-info js-sidebar__collapse sidebar__collapse" style="display: block !important;"
+        aria-pressed="false" aria-expanded="false" aria-label="Menú">
+        <span>MEN&Uacute;</span>&nbsp;&nbsp;<i class="fas fa-bars"></i>
+    </button>
+
+    <button onclick="handleMenu()" class="btnAccessUniversal">
+        <i class="fas fa-universal-access"></i>
+    </button>
+
+    <div class="menuacces menuaccesShow">
+        <div class="menuComponentAcces">
+            <div class="sectionAcces">
+                <p class="mb-0 bold">Jaws</p>
+                <div class="sectionBtnsacces">
+                    <button id="" class="btn btn-access" aria-label="Información de ayuda" title="Información de ayuda"
+                        data-toggle="modal" data-target="#information-1" accesskey="i" aria-hidden="true">
+                        <i class='bx bxs-music'></i>
+                    </button>
+                    <a href="https://uvmx-my.sharepoint.com/:w:/g/personal/fernansantiago_uv_mx/EZbYej0a50hGjU4ve_NCcesBOyVGcGH679zd3dF8Od9fEA?rtime=aZH1nWlp3Eg"
+                        target="_blank" class="questionAcces"><i class='bx bx-question-mark'></i></a>
+                </div>
+            </div>
+            <div class="lineSectionacces"></div>
+
+            <div class="sectionAcces">
+                <p class="mb-0 bold">Comando por voz</p>
+                <div class="sectionBtnsacces">
+                    <button id="btn-access" class="btn btn-access" aria-label="Botón accesibilidad">
+                        <i class="fas fa-universal-access"></i>
+                    </button>
+                    <a href="https://uvmx-my.sharepoint.com/:w:/g/personal/fernansantiago_uv_mx/EZbYej0a50hGjU4ve_NCcesBOyVGcGH679zd3dF8Od9fEA?rtime=aZH1nWlp3Eg"
+                        target="_blank" class="questionAcces"><i class='bx bx-question-mark'></i></a>
+                </div>
+            </div>
+
+            <div class="lineSectionacces"></div>
+
+            <div class="sectionAcces">
+                <p class="mb-0 bold">Lectura fácil</p>
+                <div class="sectionBtnsacces">
+                    <a accesskey="6" tabindex="0" onclick="handleLectura()" href="#btnLectura" id=""
+                        class="btnLectura btn btn-access" aria-label="Botón accesibilidad">
+                        <i class='circleacces bx bx-left-arrow-circle'></i>
+                    </a>
+                    <a href="https://uvmx-my.sharepoint.com/:w:/g/personal/fernansantiago_uv_mx/EZbYej0a50hGjU4ve_NCcesBOyVGcGH679zd3dF8Od9fEA?rtime=aZH1nWlp3Eg"
+                        target="_blank" class="questionAcces"><i class='bx bx-question-mark'></i></a>
+                </div>
+            </div>
+
+            <div class="lineSectionacces"></div>
+
+            <div class="sectionAcces">
+                <p class="mb-0 bold">Linea de lectura</p>
+                <div class="sectionBtnsacces">
+                    <button onclick="showLine()" id="" class="btnLectura btn btn-access"
+                        aria-label="Botón accesibilidad">
+                        <i class='bx bx-underline'></i>
+                    </button>
+                    <a href="https://uvmx-my.sharepoint.com/:w:/g/personal/fernansantiago_uv_mx/EZbYej0a50hGjU4ve_NCcesBOyVGcGH679zd3dF8Od9fEA?rtime=aZH1nWlp3Eg"
+                        target="_blank" class="questionAcces"><i class='bx bx-question-mark'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Prueba Fin -->
+
+
+
+
+
+    <navbar id="menu-item" class="sidebar" style="overflow-y: scroll;" role="navigation" aria-label="Menú" name="Menú">
+
+        <div class="sidebar__encabezado">
+            <button class="btn btn-link sidebar__dismiss" aria-label="Cerrar menú desplegado">
+                <i class="fas fa-arrow-left sidebar__icono"></i>
+            </button>
+        </div>
+        <menu-component></menu-component>
+    </navbar>
+
+    <header class="banner-1">
+
+        <div class="escritorio">
+            <img src="./images/home/BANNER/banner-esc.png" loading="lazy" width="100%" height="auto" alt="">
+        </div>
+
+        <div class="movil">
+            <img src="./images/home/BANNER/banner-movil.png" loading="lazy" width="100%" height="auto" alt="">
+        </div>
+
+        <div class="js-pleca pleca">
+
+            <a class="pleca__uv" href="https://uv.mx/" target="__blank">Universidad Veracruzana</a>
+
+            <div class="pleca__ee container" style="display: none;">
+                <span class="text-left aparecer-desaparecer">
+                    <p class="tam-font font-weight-bold mb-0" style="margin-top: 10px; color: #1D1D1B;">
+                        Lorem ipsum dolor sit amet
+                    </p> <br>
+                </span>
+            </div>
+
+        </div>
+
+        <h1 class="diseño-ambientes" accesskey="0" tabindex="0">
+
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit <br>
+
+            <hr class="linea-blanca-titulo">
+
+            <p class="lic-desarrollo">Lorem ipsum dolor sit</p>
+
+        </h1>
+
+    </header>
+
+    <main>
+        <section class="competencia py-5" style="position: relative;">
+
+            <p id="section-1" class="parrafo section-comandos" style="display: none;">
+                1
+            </p>
+
+            <div class="container">
+
+                <h2 accesskey="1" tabindex="0" class="titulo-competencia text-dark">
+                    Competencia
+                </h2>
+
+                <p class="parrafo">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet
+                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper
+                    suscipit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                    tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in
+                    hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="descripcion" style="position: relative;">
+
+            <p id="section-2" class="parrafo section-comandos" style="display: none;">
+                2
+            </p>
+
+            <div class="escritorio">
+                <div style="height: 150px; overflow: hidden;">
+                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                        <path d="M-3.10,127.80 C66.87,50.83 408.86,53.80 499.72,123.86 L500.00,150.00 L0.00,150.00 Z"
+                            style="stroke: none; fill: #CCEDE3;"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="bg-descripcion py-3">
+
+                <div class="container">
+
+                    <h2 accesskey="2" tabindex="0" class="titulo-vinetas text-dark">Descripción</h2>
+
+                    <p class="parrafo">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet
+                        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                        ullamcorper
+                        suscipit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                        tation
+                        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                        dolor in
+                        hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contenido" style="position: relative;">
+
+            <p id="section-3" class="parrafo section-comandos" style="display: none;">
+                3
+            </p>
+
+            <div class="container py-5">
+
+                <h2 accesskey="3" tabindex="0" class="titulo-vinetas mb-5">Contenido</h2>
+
+                <ul class="parrafo lista-contenido mt-4_5 margen-inferior-contenido">
+
+                    <li>
+                        <h3 class="parrafo mb-0 font-weight-bold">
+                            Información general
+                        </h3>
+                    </li>
+
+                    <li class="mt-4">
+                        <h3 class="parrafo mb-0 font-weight-bold">
+                            <span class="color-secundario-contenido">Módulo 1.</span> ¿Qué es la salud?
+                        </h3>
+                    </li>
+
+                    <li class="mt-4">
+                        <h3 class="parrafo mb-0 font-weight-bold">
+                            <span class="color-secundario-contenido">Módulo 2.</span> Salud individual y salud
+                            comunitaria
+                        </h3>
+                    </li>
+
+                    <li class="mt-4">
+                        <h3 class="parrafo mb-0 font-weight-bold">
+                            <span class="color-secundario-contenido">Módulo 3.</span> Las alteraciones a la salud en el
+                            siglo veinte y veintiuno
+                        </h3>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="expertos" style="position: relative;">
+
+            <p id="section-4" class="parrafo section-comandos" style="display: none;">
+                4
+            </p>
+
+            <div class="container py-5">
+
+                <h2 accesskey="4" tabindex="0" class="titulo-vinetas mb-5">Expertos en <span
+                        class="subrayar-palabra">contenido</span> </h2>
+
+                <div class="escritorio">
+
+                    <div class="row align-items-center w-50 m-auto">
+
+                        <div class="col-3">
+                            <img src="./images/home/DIPD_expertocontenido.png" width="100%" height="auto" alt="">
+                        </div>
+
+                        <div class="col-9">
+
+                            <p class="parrafo text-azul font-weight-bold mb-0">
+                                Lorem ipsum, dolor sit
+                            </p>
+
+                            <p class="parrafo text-azul mb-0">
+                                Universidad Veracruzana
+                            </p>
+
+                            <div class="d-flex justify-content-end">
+                                <button id="expert1" class="btn btn-expertos-modal waves-effect waves-light"
+                                    data-toggle="modal" data-target="#experto-1"
+                                    aria-label="Información del experto en contenido">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <hr class="linea-azul-expertos">
+
+                    <div class="row align-items-center w-50 m-auto">
+
+                        <div class="col-3">
+                            <img src="./images/home/DIPD_expertocontenido.png" width="100%" height="auto" alt="">
+                        </div>
+
+                        <div class="col-9">
+
+                            <p class="parrafo text-azul font-weight-bold mb-0">
+                                Lorem ipsum, dolor sit
+                            </p>
+
+                            <p class="parrafo text-azul mb-0">
+                                Universidad Veracruzana
+                            </p>
+
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-expertos-modal waves-effect waves-light" data-toggle="modal"
+                                    data-target="#experto-1" aria-label="Información del experto en contenido">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="movil">
+
+                    <div class="exp-1">
+
+                        <div class="text-center">
+
+                            <img src="./images/home/DIPD_expertocontenido.png" width="30%" height="auto"
+                                alt="Imagen de experto en contenido">
+
+                            <p class="parrafo mt-2 text-azul">
+                                <b>Lorem ipsum dolor sit</b> <br>
+                                Universidad Veracruzana
+                            </p>
+
+                        </div>
+
+                        <p class="parrafo">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloribus atque quo
+                            explicabo hic nostrum similique totam maxime, modi in fugit, voluptate praesentium ut
+                            temporibus tempora asperiores iste culpa deserunt.
+                            Illum commodi fuga ad, nihil totam provident? Blanditiis fugiat quibusdam unde reiciendis.
+                            Reiciendis dolor molestias perspiciatis! Quidem fugit saepe exercitationem, et laboriosam
+                            labore consequatur dignissimos accusantium possimus architecto cum minus.
+                            Quos sed voluptatem quis repellendus magnam eius perferendis repellat commodi facere enim
+                            dolorem cupiditate voluptatibus officia libero, ratione in culpa voluptates a molestias.
+                            Illum magni earum officiis. Earum, unde numquam!
+                        </p>
+
+                    </div>
+
+                    <hr class="linea-azul-expertos">
+
+                    <div class="exp-2">
+
+                        <div class="text-center">
+
+                            <img src="./images/home/DIPD_expertocontenido.png" width="30%" height="auto"
+                                alt="Imagen de experto en contenido">
+
+                            <p class="parrafo mt-2 text-azul">
+                                <b>Lorem ipsum dolor sit</b> <br>
+                                Universidad Veracruzana
+                            </p>
+
+                        </div>
+
+                        <p class="parrafo">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloribus atque quo
+                            explicabo hic nostrum similique totam maxime, modi in fugit, voluptate praesentium ut
+                            temporibus tempora asperiores iste culpa deserunt.
+                            Illum commodi fuga ad, nihil totam provident? Blanditiis fugiat quibusdam unde reiciendis.
+                            Reiciendis dolor molestias perspiciatis! Quidem fugit saepe exercitationem, et laboriosam
+                            labore consequatur dignissimos accusantium possimus architecto cum minus.
+                            Quos sed voluptatem quis repellendus magnam eius perferendis repellat commodi facere enim
+                            dolorem cupiditate voluptatibus officia libero, ratione in culpa voluptates a molestias.
+                            Illum magni earum officiis. Earum, unde numquam!
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="referencias" style="position: relative;">
+
+            <p id="section-5" class="parrafo section-comandos" style="display: none;">
+                5
+            </p>
+
+            <div class="container py-5">
+
+                <h2 class="titulo-vinetas mb-5" accesskey="5" tabindex="0">Fuentes de información</h2>
+
+                <div class="escritorio mt-4 mb-5">
+
+                    <div class="colapsador">
+
+                        <button data-toggle="collapse" data-target="#basicas-1" id="basic1"
+                            class="btn btn-colapsar waves-effect waves-light collapsed" aria-expanded="false">
+                            <div class="btn-colapsar-layout">
+                                <span class="linea linea--naranja"></span>
+                                <span class="btn-colapsar-texto" accesskey="b" tabindex="0">Básicas</span>
+                                <span class="btn-colapsar-icono"><i class="fas fa-plus"></i></span>
+                            </div>
+                        </button>
+
+                        <section id="basicas-1" class="collapse">
+
+                            <h3 class="sr-only">
+                                Básicas
+                            </h3>
+
+                            <div class="colapsar-contenido">
+
+                                <p class="parrafo">
+                                    PENDIENTE
+                                </p>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                    <br>
+
+                    <div class="colapsador">
+
+                        <button data-toggle="collapse" data-target="#complementarias-1"
+                            class="btn btn-colapsar waves-effect waves-light collapsed" aria-expanded="false">
+                            <div class="btn-colapsar-layout">
+                                <span class="linea linea--naranja"></span>
+                                <span class="btn-colapsar-texto">Complementarias</span>
+                                <span class="btn-colapsar-icono"><i class="fas fa-plus"></i></span>
+                            </div>
+                        </button>
+
+                        <section id="complementarias-1" class="collapse">
+
+                            <h3 class="sr-only">
+                                Complementarias
+                            </h3>
+
+                            <div class="colapsar-contenido">
+
+                                <p class="parrafo">
+                                    PENDIENTE
+                                </p>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+
+                </div>
+
+                <a accesskey="u" tabindex="1" href="./descargables/#" download="" id="btnLectura" class="btnlectfacil">
+                    <span>Lectura fácil</span>
+                </a>
+
+                <div class="movil">
+
+                    <p class="parrafo instruccion-color--verde">
+                        <b>Instrucción:</b> Haz clic en el botón para descargar las fuentes de información.
+                    </p>
+
+                    <div class="text-center">
+                        <a href="descargables/info-gral/EITI-Fuentes-de-informacion.pdf" download=""
+                            class="btn btn-descarga border rounded">
+                            <span class="boton--con-imagen__texto">Fuentes de información</span>
+                            <span class="parrafo sr-only">PDF</span>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+
+        <img src="images//home/banner-footer.png" alt="Logo de la Universidad Veracruzana" width="100%" height="auto">
+
+    </footer>
+
+    <div class="overlay"></div>
+
+    <div class="modal fade" id="information-1" tabindex="-1" role="dialog" style="display: none;" lang="es"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close btn-cerrar-modal" data-dismiss="modal" aria-label="Close"
+                        accesskey="X">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="container">
+
+                        <div class="text-center mb-3">
+
+                            <p class="parrafo mt-4">
+                                <strong>Información de ayuda</strong>
+                            </p>
+
+                        </div>
+
+                        <p class="parrafo">
+                            Para navegar de mejor manera dentro de la experiencia hemos puesto una serie de atajos
+                            para que puedas acceder de forma más rápida a algunos elementos dentro de la
+                            experiencia;
+                            como botones, enlaces, evaluaciones etc.
+                        </p>
+
+                        <p class="parrafo">
+                            A continuación te presentamos estos atajos.
+                        </p>
+
+                        <ul class="parrafo ml-4">
+                            <li>Abrir la ventana con la información de ayuda: Alt + i </li>
+                            <li>Título de página: Alt + 0</li>
+                            <li>Sección 1: Alt + 1</li>
+                            <li>Sección 2: Alt + 2</li>
+                            <li>Sección 3: Alt + 3</li>
+                            <li>Sección 4: Alt + 4</li>
+                            <li>Sección 5: Alt + 5</li>
+                            <li>Sección 6: Alt + 6</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cerrar-modal waves-effect waves-light"
+                        style="border-radius: 7px;" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal animate__animated animate__zoomInUp" id="experto-1" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <hr class="linea-modales">
+
+                    <div class="mx-3">
+
+                        <div class="text-center mt-4 mb-4">
+
+                            <img src="./images/home/DIPD_expertocontenido.png" width="12%" height="auto"
+                                alt="Imagen de experto en contenido">
+
+                            <p class="parrafo">
+                                <b>Lorem ipsum dolor sit</b> <br>
+                                Universidad Veracruzana
+                            </p>
+
+                        </div>
+
+                        <p class="parrafo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet qui delectus, facere id iste
+                            quod enim, totam quae asperiores eos, consequatur perferendis fuga necessitatibus vero
+                            maiores neque dicta ex facilis.
+                            Distinctio asperiores, rerum aspernatur nesciunt adipisci, possimus ratione illo quia
+                            commodi sit voluptates cumque mollitia non cupiditate quasi voluptatum maiores quibusdam
+                            dicta exercitationem excepturi minima placeat maxime. Quod, ipsam assumenda?
+                            Totam eaque velit incidunt sequi corporis. Unde, doloremque. Nisi tempora cupiditate nemo?
+                            Provident, quod. Ullam, consectetur magnam delectus alias perspiciatis sequi eos maiores,
+                            laboriosam praesentium vitae doloribus voluptates libero sapiente!
+                            Facilis error maiores obcaecati corrupti! Eius minima fugit ipsum blanditiis dignissimos at
+                            tempore atque sit neque tempora, magnam, dicta distinctio possimus inventore dolorem
+                            tenetur, omnis sint quos. Iure, error commodi.
+                            Quam illo dicta quas eos voluptatum commodi molestiae veniam, dolores id dolorum culpa iure
+                            totam! A ipsum eveniet consequatur aliquid inventore aut molestiae nemo impedit porro
+                            exercitationem, minima doloremque voluptate.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cerrar-modal" style="border-radius: 7px;"
+                        data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- inicio -->
+
+    <!-- fin -->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+
+    <!-- Funcionalidad general -->
+    <script src="scripts/js/home.js"></script>
+    <script src="scripts/js/annyang.js"></script>
+    <script type="text/javascript" src="scripts/js/menu.js"></script>
+    <script src="scripts/menuacces.js"></script>
+
+    <!-- Funcionalidad para Progress-bar-scroll del inicio -->
+    <script src="./scripts/js/scroll-timeline.js"></script>
+
+    <script>
+
+        // Create ScrollTimeline
+        const myScrollTimeline = new ScrollTimeline({
+            source: document.scrollingElement,
+            scrollSource: document.scrollingElement, // For legacy implementations
+            orientation: 'block',
+            scrollOffsets: [
+                new CSSUnitValue(0, 'percent'),
+                new CSSUnitValue(100, 'percent'),
+            ],
+        });
+
+        // Animate Progress Bar on Scroll
+        new Animation(
+            new KeyframeEffect(
+                document.querySelector('#progress'),
+                {
+                    transform: ['scaleX(0)', 'scaleX(1)'],
+                },
+                { duration: 1, fill: "forwards" }
+            ),
+            myScrollTimeline
+        ).play();
+
+    </script>
+    <!--  -->
+
+</body>
+
+</html>
